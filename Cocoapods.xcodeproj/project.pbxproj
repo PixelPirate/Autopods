@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8515531F1F17AD10006389C6 /* NSWindow+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */; };
+		851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553201F17B3C4006389C6 /* ProgressCoordinator.swift */; };
+		851553231F17B417006389C6 /* ProcessProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553221F17B417006389C6 /* ProcessProgress.swift */; };
 		851CD1181F15103A00524C2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851CD1171F15103A00524C2A /* AppDelegate.swift */; };
 		851CD11A1F15103A00524C2A /* PodfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851CD1191F15103A00524C2A /* PodfilesViewController.swift */; };
 		851CD11C1F15103A00524C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851CD11B1F15103A00524C2A /* Assets.xcassets */; };
 		851CD11F1F15103A00524C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851CD11D1F15103A00524C2A /* Main.storyboard */; };
-		85773AB51F164548001B8083 /* CocoapodsPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 85773AB41F164548001B8083 /* CocoapodsPane.h */; };
-		85773AB71F164548001B8083 /* CocoapodsPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 85773AB61F164548001B8083 /* CocoapodsPane.m */; };
-		85773AB91F164548001B8083 /* CocoapodsPane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85773AB81F164548001B8083 /* CocoapodsPane.tiff */; };
-		85773ABC1F164548001B8083 /* CocoapodsPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85773ABA1F164548001B8083 /* CocoapodsPane.xib */; };
 		85773AC41F1672AA001B8083 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC31F1672AA001B8083 /* FileWatcher.swift */; };
 		85773AC61F16745C001B8083 /* FileWatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC51F16745C001B8083 /* FileWatchService.swift */; };
 		85773AC81F167500001B8083 /* Serivces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC71F167500001B8083 /* Serivces.swift */; };
 		85773ACA1F16769E001B8083 /* CocoapodsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC91F16769E001B8083 /* CocoapodsService.swift */; };
 		85773ACC1F1676ED001B8083 /* CoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773ACB1F1676ED001B8083 /* CoordinatorService.swift */; };
 		85773ACE1F167B06001B8083 /* FileWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773ACD1F167B06001B8083 /* FileWatch.swift */; };
+		85773AD61F175700001B8083 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AD51F175700001B8083 /* TransparentWindow.swift */; };
+		85773AD81F175A2D001B8083 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AD71F175A2D001B8083 /* ProgressViewController.swift */; };
+		85773ADA1F175C02001B8083 /* UIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AD91F175C02001B8083 /* UIService.swift */; };
+		85773ADC1F179022001B8083 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773ADB1F179021001B8083 /* Math.swift */; };
+		85773ADE1F17A832001B8083 /* ClosedRange+At.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773ADD1F17A832001B8083 /* ClosedRange+At.swift */; };
 		85B8BEBB1F15145800B1B4EE /* CocoapodViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BEBA1F15145800B1B4EE /* CocoapodViewItem.swift */; };
 		85B8BEBD1F15193600B1B4EE /* CocoapodViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85B8BEBC1F15193600B1B4EE /* CocoapodViewItem.xib */; };
 		85B8BEBF1F151C1300B1B4EE /* ListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BEBE1F151C1300B1B4EE /* ListLayout.swift */; };
@@ -30,24 +34,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Fade.swift"; sourceTree = "<group>"; };
+		851553201F17B3C4006389C6 /* ProgressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCoordinator.swift; sourceTree = "<group>"; };
+		851553221F17B417006389C6 /* ProcessProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessProgress.swift; sourceTree = "<group>"; };
 		851CD1141F15103A00524C2A /* Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocoapods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		851CD1171F15103A00524C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		851CD1191F15103A00524C2A /* PodfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodfilesViewController.swift; sourceTree = "<group>"; };
 		851CD11B1F15103A00524C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		851CD11E1F15103A00524C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		851CD1201F15103A00524C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85773AB21F164548001B8083 /* CocoapodsPane.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoapodsPane.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
-		85773AB41F164548001B8083 /* CocoapodsPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoapodsPane.h; sourceTree = "<group>"; };
-		85773AB61F164548001B8083 /* CocoapodsPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoapodsPane.m; sourceTree = "<group>"; };
-		85773AB81F164548001B8083 /* CocoapodsPane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CocoapodsPane.tiff; sourceTree = "<group>"; };
-		85773ABB1F164548001B8083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CocoapodsPane.xib; sourceTree = "<group>"; };
-		85773ABD1F164548001B8083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85773AC31F1672AA001B8083 /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
 		85773AC51F16745C001B8083 /* FileWatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatchService.swift; sourceTree = "<group>"; };
 		85773AC71F167500001B8083 /* Serivces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serivces.swift; sourceTree = "<group>"; };
 		85773AC91F16769E001B8083 /* CocoapodsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoapodsService.swift; sourceTree = "<group>"; };
 		85773ACB1F1676ED001B8083 /* CoordinatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorService.swift; sourceTree = "<group>"; };
 		85773ACD1F167B06001B8083 /* FileWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWatch.swift; sourceTree = "<group>"; };
+		85773AD51F175700001B8083 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransparentWindow.swift; path = "../../../mac-ping/Ping-Mac/Ping/TransparentWindow.swift"; sourceTree = "<group>"; };
+		85773AD71F175A2D001B8083 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		85773AD91F175C02001B8083 /* UIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIService.swift; sourceTree = "<group>"; };
+		85773ADB1F179021001B8083 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		85773ADD1F17A832001B8083 /* ClosedRange+At.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClosedRange+At.swift"; sourceTree = "<group>"; };
 		85B8BEBA1F15145800B1B4EE /* CocoapodViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoapodViewItem.swift; sourceTree = "<group>"; };
 		85B8BEBC1F15193600B1B4EE /* CocoapodViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocoapodViewItem.xib; sourceTree = "<group>"; };
 		85B8BEBE1F151C1300B1B4EE /* ListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayout.swift; sourceTree = "<group>"; };
@@ -64,13 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85773AAE1F164548001B8083 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				851CD1161F15103A00524C2A /* Cocoapods */,
-				85773AB31F164548001B8083 /* CocoapodsPane */,
 				851CD1151F15103A00524C2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				851CD1141F15103A00524C2A /* Cocoapods.app */,
-				85773AB21F164548001B8083 /* CocoapodsPane.prefPane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,12 +93,14 @@
 			isa = PBXGroup;
 			children = (
 				851CD1171F15103A00524C2A /* AppDelegate.swift */,
+				85773AC71F167500001B8083 /* Serivces.swift */,
 				85773AD11F17554A001B8083 /* Controller */,
 				85773ACF1F175518001B8083 /* Services */,
 				85773AD41F1755A5001B8083 /* Views */,
 				85773AD01F175540001B8083 /* Models */,
 				85773AD21F17556C001B8083 /* Utilities */,
 				85773AD31F175591001B8083 /* Cells */,
+				85773ADF1F17A845001B8083 /* Extensions */,
 				851CD11B1F15103A00524C2A /* Assets.xcassets */,
 				851CD11D1F15103A00524C2A /* Main.storyboard */,
 				851CD1201F15103A00524C2A /* Info.plist */,
@@ -109,26 +108,14 @@
 			path = Cocoapods;
 			sourceTree = "<group>";
 		};
-		85773AB31F164548001B8083 /* CocoapodsPane */ = {
-			isa = PBXGroup;
-			children = (
-				85773AB41F164548001B8083 /* CocoapodsPane.h */,
-				85773AB61F164548001B8083 /* CocoapodsPane.m */,
-				85773AB81F164548001B8083 /* CocoapodsPane.tiff */,
-				85773ABA1F164548001B8083 /* CocoapodsPane.xib */,
-				85773ABD1F164548001B8083 /* Info.plist */,
-			);
-			path = CocoapodsPane;
-			sourceTree = "<group>";
-		};
 		85773ACF1F175518001B8083 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				85773AC71F167500001B8083 /* Serivces.swift */,
+				85773ACB1F1676ED001B8083 /* CoordinatorService.swift */,
 				85773AC51F16745C001B8083 /* FileWatchService.swift */,
 				85B8BEC21F1525C600B1B4EE /* PodfilesService.swift */,
-				85773ACB1F1676ED001B8083 /* CoordinatorService.swift */,
 				85773AC91F16769E001B8083 /* CocoapodsService.swift */,
+				85773AD91F175C02001B8083 /* UIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -145,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				851CD1191F15103A00524C2A /* PodfilesViewController.swift */,
+				85773AD71F175A2D001B8083 /* ProgressViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,9 +140,12 @@
 		85773AD21F17556C001B8083 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				851553201F17B3C4006389C6 /* ProgressCoordinator.swift */,
+				851553221F17B417006389C6 /* ProcessProgress.swift */,
 				85B8BEBE1F151C1300B1B4EE /* ListLayout.swift */,
 				85773AC31F1672AA001B8083 /* FileWatcher.swift */,
 				85773ACD1F167B06001B8083 /* FileWatch.swift */,
+				85773ADB1F179021001B8083 /* Math.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -171,23 +162,22 @@
 		85773AD41F1755A5001B8083 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				85773AD51F175700001B8083 /* TransparentWindow.swift */,
 				85B8BEC41F15292000B1B4EE /* FilesCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		85773AAF1F164548001B8083 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85773AB51F164548001B8083 /* CocoapodsPane.h in Headers */,
+		85773ADF1F17A845001B8083 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				85773ADD1F17A832001B8083 /* ClosedRange+At.swift */,
+				8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			path = Extensions;
+			sourceTree = "<group>";
 		};
-/* End PBXHeadersBuildPhase section */
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		851CD1131F15103A00524C2A /* Cocoapods */ = {
@@ -207,24 +197,6 @@
 			productReference = 851CD1141F15103A00524C2A /* Cocoapods.app */;
 			productType = "com.apple.product-type.application";
 		};
-		85773AB11F164548001B8083 /* CocoapodsPane */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 85773AC01F164548001B8083 /* Build configuration list for PBXNativeTarget "CocoapodsPane" */;
-			buildPhases = (
-				85773AAD1F164548001B8083 /* Sources */,
-				85773AAE1F164548001B8083 /* Frameworks */,
-				85773AAF1F164548001B8083 /* Headers */,
-				85773AB01F164548001B8083 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CocoapodsPane;
-			productName = CocoapodsPane;
-			productReference = 85773AB21F164548001B8083 /* CocoapodsPane.prefPane */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,10 +211,6 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 3DZ38T823P;
 						ProvisioningStyle = Automatic;
-					};
-					85773AB11F164548001B8083 = {
-						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = 3DZ38T823P;
 					};
 				};
 			};
@@ -260,7 +228,6 @@
 			projectRoot = "";
 			targets = (
 				851CD1131F15103A00524C2A /* Cocoapods */,
-				85773AB11F164548001B8083 /* CocoapodsPane */,
 			);
 		};
 /* End PBXProject section */
@@ -276,15 +243,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85773AB01F164548001B8083 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85773AB91F164548001B8083 /* CocoapodsPane.tiff in Resources */,
-				85773ABC1F164548001B8083 /* CocoapodsPane.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -292,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85773AD81F175A2D001B8083 /* ProgressViewController.swift in Sources */,
+				851553231F17B417006389C6 /* ProcessProgress.swift in Sources */,
 				85B8BEBB1F15145800B1B4EE /* CocoapodViewItem.swift in Sources */,
 				85B8BEC51F15292000B1B4EE /* FilesCollectionView.swift in Sources */,
 				85B8BEC11F1525BB00B1B4EE /* Podfile.swift in Sources */,
@@ -300,19 +260,17 @@
 				85773ACA1F16769E001B8083 /* CocoapodsService.swift in Sources */,
 				85773AC41F1672AA001B8083 /* FileWatcher.swift in Sources */,
 				851CD1181F15103A00524C2A /* AppDelegate.swift in Sources */,
+				8515531F1F17AD10006389C6 /* NSWindow+Fade.swift in Sources */,
+				85773ADA1F175C02001B8083 /* UIService.swift in Sources */,
+				85773ADC1F179022001B8083 /* Math.swift in Sources */,
+				85773AD61F175700001B8083 /* TransparentWindow.swift in Sources */,
 				85773AC81F167500001B8083 /* Serivces.swift in Sources */,
 				85773ACE1F167B06001B8083 /* FileWatch.swift in Sources */,
+				85773ADE1F17A832001B8083 /* ClosedRange+At.swift in Sources */,
 				85B8BEC31F1525C600B1B4EE /* PodfilesService.swift in Sources */,
+				851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */,
 				85773AC61F16745C001B8083 /* FileWatchService.swift in Sources */,
 				85773ACC1F1676ED001B8083 /* CoordinatorService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		85773AAD1F164548001B8083 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85773AB71F164548001B8083 /* CocoapodsPane.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,14 +283,6 @@
 				851CD11E1F15103A00524C2A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		85773ABA1F164548001B8083 /* CocoapodsPane.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85773ABB1F164548001B8083 /* Base */,
-			);
-			name = CocoapodsPane.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -458,52 +408,6 @@
 			};
 			name = Release;
 		};
-		85773ABE1F164548001B8083 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3DZ38T823P;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CocoapodsPane/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				PRODUCT_BUNDLE_IDENTIFIER = de.piay.CocoapodsPane;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = prefPane;
-			};
-			name = Debug;
-		};
-		85773ABF1F164548001B8083 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3DZ38T823P;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CocoapodsPane/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				PRODUCT_BUNDLE_IDENTIFIER = de.piay.CocoapodsPane;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = prefPane;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -524,14 +428,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		85773AC01F164548001B8083 /* Build configuration list for PBXNativeTarget "CocoapodsPane" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				85773ABE1F164548001B8083 /* Debug */,
-				85773ABF1F164548001B8083 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
