@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13156.6"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <collectionViewItem id="ag9-N0-1os" customClass="CocoapodViewItem" customModule="Cocoapods" customModuleProvider="target">
+            <connections>
+                <outlet property="pathControl" destination="oyv-cr-OVD" id="5nx-op-YnR"/>
+                <outlet property="view" destination="0eL-wt-ux5" id="mCt-HW-zR3"/>
+            </connections>
+            <point key="canvasLocation" x="605.5" y="621"/>
+        </collectionViewItem>
+        <view id="0eL-wt-ux5">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="14"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <pathControl focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyv-cr-OVD">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="14"/>
+                    <pathCell key="cell" controlSize="small" selectable="YES" refusesFirstResponder="YES" focusRingType="none" alignment="left" id="vvy-tN-0T5">
+                        <font key="font" metaFont="smallSystem"/>
+                        <url key="url" string="file://localhost/Applications/"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.92549019607843142" blue="0.97254901960784312" alpha="1" colorSpace="deviceRGB"/>
+                    </pathCell>
+                </pathControl>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CX1-zv-82f" userLabel="Event Blocker">
+                    <rect key="frame" x="-2" y="0.0" width="383" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="UTY-A5-CRG">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oyv-cr-OVD" firstAttribute="centerY" secondItem="0eL-wt-ux5" secondAttribute="centerY" id="1tV-Zp-67v"/>
+                <constraint firstAttribute="trailing" secondItem="oyv-cr-OVD" secondAttribute="trailing" id="668-iQ-RNg"/>
+                <constraint firstAttribute="trailing" secondItem="CX1-zv-82f" secondAttribute="trailing" id="AUG-wT-cGq"/>
+                <constraint firstAttribute="bottom" secondItem="CX1-zv-82f" secondAttribute="bottom" id="HaO-nH-QMn"/>
+                <constraint firstItem="CX1-zv-82f" firstAttribute="top" secondItem="0eL-wt-ux5" secondAttribute="top" id="QtY-AB-je6"/>
+                <constraint firstItem="oyv-cr-OVD" firstAttribute="top" secondItem="0eL-wt-ux5" secondAttribute="top" id="UJg-4F-jJI"/>
+                <constraint firstAttribute="bottom" secondItem="oyv-cr-OVD" secondAttribute="bottom" id="VVa-FZ-8Q2"/>
+                <constraint firstItem="CX1-zv-82f" firstAttribute="leading" secondItem="0eL-wt-ux5" secondAttribute="leading" id="p7K-l8-45t"/>
+                <constraint firstItem="oyv-cr-OVD" firstAttribute="leading" secondItem="0eL-wt-ux5" secondAttribute="leading" id="thj-g5-4jQ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
