@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13156.6"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSPreferencePane">
+            <connections>
+                <outlet property="_window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+                <outlet property="enableUpdatesSwitch" destination="9TM-Hd-N0h" id="xXZ-ra-LP8"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="≪ do not localize ≫" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" deferred="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5" userLabel="PrefPane">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="176" y="715" width="668" height="368"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="668" height="368"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView wantsLayer="YES" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-DO-rmH">
+                        <rect key="frame" x="275" y="0.0" width="393" height="368"/>
+                        <clipView key="contentView" drawsBackground="NO" id="ZlP-yx-oZ1">
+                            <rect key="frame" x="1" y="1" width="391" height="366"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <collectionView id="OkV-zb-jqf" customClass="FilesCollectionView" customModule="CocoapodsPane" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="391" height="158"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="bXp-bE-Itv">
+                                        <size key="itemSize" width="50" height="50"/>
+                                    </collectionViewFlowLayout>
+                                    <color key="primaryBackgroundColor" red="0.89014935493469238" green="0.89022856950759888" blue="0.89008325338363647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="qX7-Q4-CRy" id="xen-Ai-dU4"/>
+                                        <outlet property="delegate" destination="qX7-Q4-CRy" id="ONk-XO-CMZ"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="KBL-Fu-cxM">
+                            <rect key="frame" x="1" y="351" width="391" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="DQm-dJ-esw">
+                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hip-rC-jqE">
+                        <rect key="frame" x="-2" y="222" width="279" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="275" id="NTz-GD-e6M"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Cocoapods" id="JCD-Jr-pPn">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="9TM-Hd-N0h">
+                        <rect key="frame" x="59" y="188" width="158" height="18"/>
+                        <buttonCell key="cell" type="check" title="Automatische updates" bezelStyle="regularSquare" imagePosition="left" alignment="center" state="on" inset="2" id="G2Y-Q8-BVZ">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="automaticUpdateChanged:" target="qX7-Q4-CRy" id="RbX-kC-Njt"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BGy-DO-rmH" firstAttribute="leading" secondItem="Hip-rC-jqE" secondAttribute="trailing" id="4Py-L9-dr3"/>
+                    <constraint firstItem="Hip-rC-jqE" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="aXE-Ix-DJx"/>
+                    <constraint firstItem="9TM-Hd-N0h" firstAttribute="top" secondItem="Hip-rC-jqE" secondAttribute="bottom" constant="18" id="eX2-nn-KhG"/>
+                    <constraint firstAttribute="trailing" secondItem="BGy-DO-rmH" secondAttribute="trailing" id="hYm-g2-SND"/>
+                    <constraint firstItem="Hip-rC-jqE" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="129" id="iDT-ef-r61"/>
+                    <constraint firstItem="9TM-Hd-N0h" firstAttribute="centerX" secondItem="Hip-rC-jqE" secondAttribute="centerX" id="nXj-5E-YIV"/>
+                    <constraint firstAttribute="bottom" secondItem="BGy-DO-rmH" secondAttribute="bottom" id="p5S-kA-uYe"/>
+                    <constraint firstItem="BGy-DO-rmH" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="v2u-fp-i5j"/>
+                </constraints>
+            </view>
+        </window>
+        <customObject id="qX7-Q4-CRy" customClass="PodfilesPreferencesController" customModule="CocoapodsPane" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="OkV-zb-jqf" id="GW8-Vc-mLw"/>
+                <outlet property="enableUpdatesSwitch" destination="9TM-Hd-N0h" id="sql-Ma-kqh"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

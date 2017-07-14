@@ -1,4 +1,5 @@
 import Foundation
+import Cocoa
 
 final class CoordinatorService {
 
@@ -12,5 +13,14 @@ final class CoordinatorService {
                 self.progressCoordinator = nil
             }
         }
+    }
+}
+
+func display(_ text: String) {
+    DispatchQueue.main.async {
+        let alert = NSAlert()
+        alert.messageText = "Info"
+        alert.informativeText = text
+        alert.runModal()
     }
 }

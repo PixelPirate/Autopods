@@ -6,7 +6,7 @@ final class PodfilesService {
 
     init() {
         for podfile in podfiles {
-            Services.coordinator.coordinate(added: podfile)
+            PodfilesService.handle(added: podfile)
         }
     }
 
@@ -29,6 +29,14 @@ final class PodfilesService {
         var files = podfiles
         files.insert(podfile)
         podfiles = files
+
+        PodfilesService.handle(added: podfile)
+    }
+
+    static func handle(added podfile: Podfile) {
+        guard ProcessInfo.processInfo.processName != "System Preferences" else {
+            return
+        }
 
         Services.coordinator.coordinate(added: podfile)
     }

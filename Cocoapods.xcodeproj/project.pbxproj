@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850529D11F17B764000E34E2 /* CocoapodsPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 850529D01F17B764000E34E2 /* CocoapodsPane.h */; };
+		850529D31F17B764000E34E2 /* CocoapodsPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 850529D21F17B764000E34E2 /* CocoapodsPane.m */; };
+		850529D51F17B764000E34E2 /* CocoapodsPane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 850529D41F17B764000E34E2 /* CocoapodsPane.tiff */; };
+		850529D81F17B764000E34E2 /* CocoapodsPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850529D61F17B764000E34E2 /* CocoapodsPane.xib */; };
+		850529E01F17B7D8000E34E2 /* Serivces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC71F167500001B8083 /* Serivces.swift */; };
+		850529E11F17B7D8000E34E2 /* PodfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851CD1191F15103A00524C2A /* PodfilesViewController.swift */; };
+		850529E21F17B7D8000E34E2 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AD71F175A2D001B8083 /* ProgressViewController.swift */; };
+		850529E31F17B7D8000E34E2 /* CoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773ACB1F1676ED001B8083 /* CoordinatorService.swift */; };
+		850529E41F17B7D8000E34E2 /* FileWatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC51F16745C001B8083 /* FileWatchService.swift */; };
+		850529E51F17B7D8000E34E2 /* PodfilesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BEC21F1525C600B1B4EE /* PodfilesService.swift */; };
+		850529E61F17B7D8000E34E2 /* CocoapodsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC91F16769E001B8083 /* CocoapodsService.swift */; };
+		850529E71F17B7D8000E34E2 /* UIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AD91F175C02001B8083 /* UIService.swift */; };
+		850529E81F17B7D8000E34E2 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AD51F175700001B8083 /* TransparentWindow.swift */; };
+		850529E91F17B7D8000E34E2 /* FilesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BEC41F15292000B1B4EE /* FilesCollectionView.swift */; };
+		850529EA1F17B7D8000E34E2 /* Podfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BEC01F1525BB00B1B4EE /* Podfile.swift */; };
+		850529EB1F17B7D8000E34E2 /* ProgressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553201F17B3C4006389C6 /* ProgressCoordinator.swift */; };
+		850529EC1F17B7D8000E34E2 /* ProcessProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553221F17B417006389C6 /* ProcessProgress.swift */; };
+		850529ED1F17B7D8000E34E2 /* ListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BEBE1F151C1300B1B4EE /* ListLayout.swift */; };
+		850529EE1F17B7D8000E34E2 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC31F1672AA001B8083 /* FileWatcher.swift */; };
+		850529EF1F17B7D8000E34E2 /* FileWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773ACD1F167B06001B8083 /* FileWatch.swift */; };
+		850529F01F17B7D8000E34E2 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773ADB1F179021001B8083 /* Math.swift */; };
+		850529F11F17B7D8000E34E2 /* CocoapodViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85B8BEBC1F15193600B1B4EE /* CocoapodViewItem.xib */; };
+		850529F21F17B7D8000E34E2 /* CocoapodViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BEBA1F15145800B1B4EE /* CocoapodViewItem.swift */; };
+		850529F31F17B7D8000E34E2 /* ClosedRange+At.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773ADD1F17A832001B8083 /* ClosedRange+At.swift */; };
+		850529F41F17B7D8000E34E2 /* NSWindow+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */; };
+		850529F61F17BAC7000E34E2 /* PodfilesPreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850529F51F17BAC7000E34E2 /* PodfilesPreferencesController.swift */; };
+		850529F91F17BC54000E34E2 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850529F81F17BC54000E34E2 /* Progress.storyboard */; };
 		8515531F1F17AD10006389C6 /* NSWindow+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */; };
 		851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553201F17B3C4006389C6 /* ProgressCoordinator.swift */; };
 		851553231F17B417006389C6 /* ProcessProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553221F17B417006389C6 /* ProcessProgress.swift */; };
@@ -14,6 +41,9 @@
 		851CD11A1F15103A00524C2A /* PodfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851CD1191F15103A00524C2A /* PodfilesViewController.swift */; };
 		851CD11C1F15103A00524C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851CD11B1F15103A00524C2A /* Assets.xcassets */; };
 		851CD11F1F15103A00524C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851CD11D1F15103A00524C2A /* Main.storyboard */; };
+		8520B5851F17C92E009D6910 /* Cocoapods.app in Resources */ = {isa = PBXBuildFile; fileRef = 851CD1141F15103A00524C2A /* Cocoapods.app */; };
+		8520B5871F17CF25009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
+		8520B5881F17D0AF009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
 		85773AC41F1672AA001B8083 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC31F1672AA001B8083 /* FileWatcher.swift */; };
 		85773AC61F16745C001B8083 /* FileWatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC51F16745C001B8083 /* FileWatchService.swift */; };
 		85773AC81F167500001B8083 /* Serivces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC71F167500001B8083 /* Serivces.swift */; };
@@ -34,6 +64,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		850529CE1F17B764000E34E2 /* CocoapodsPane.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoapodsPane.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		850529D01F17B764000E34E2 /* CocoapodsPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoapodsPane.h; sourceTree = "<group>"; };
+		850529D21F17B764000E34E2 /* CocoapodsPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoapodsPane.m; sourceTree = "<group>"; };
+		850529D41F17B764000E34E2 /* CocoapodsPane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CocoapodsPane.tiff; sourceTree = "<group>"; };
+		850529D71F17B764000E34E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CocoapodsPane.xib; sourceTree = "<group>"; };
+		850529D91F17B764000E34E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		850529DD1F17B784000E34E2 /* CocoapodsPane-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoapodsPane-Bridging-Header.h"; sourceTree = "<group>"; };
+		850529F51F17BAC7000E34E2 /* PodfilesPreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodfilesPreferencesController.swift; sourceTree = "<group>"; };
+		850529F81F17BC54000E34E2 /* Progress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
 		8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Fade.swift"; sourceTree = "<group>"; };
 		851553201F17B3C4006389C6 /* ProgressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCoordinator.swift; sourceTree = "<group>"; };
 		851553221F17B417006389C6 /* ProcessProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessProgress.swift; sourceTree = "<group>"; };
@@ -43,6 +82,7 @@
 		851CD11B1F15103A00524C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		851CD11E1F15103A00524C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		851CD1201F15103A00524C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8520B5861F17CF25009D6910 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
 		85773AC31F1672AA001B8083 /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
 		85773AC51F16745C001B8083 /* FileWatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatchService.swift; sourceTree = "<group>"; };
 		85773AC71F167500001B8083 /* Serivces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serivces.swift; sourceTree = "<group>"; };
@@ -63,6 +103,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		850529CA1F17B764000E34E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		851CD1111F15103A00524C2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,10 +120,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		850529CF1F17B764000E34E2 /* CocoapodsPane */ = {
+			isa = PBXGroup;
+			children = (
+				850529D01F17B764000E34E2 /* CocoapodsPane.h */,
+				850529D21F17B764000E34E2 /* CocoapodsPane.m */,
+				850529D41F17B764000E34E2 /* CocoapodsPane.tiff */,
+				850529D61F17B764000E34E2 /* CocoapodsPane.xib */,
+				850529D91F17B764000E34E2 /* Info.plist */,
+				850529DD1F17B784000E34E2 /* CocoapodsPane-Bridging-Header.h */,
+				850529F51F17BAC7000E34E2 /* PodfilesPreferencesController.swift */,
+			);
+			path = CocoapodsPane;
+			sourceTree = "<group>";
+		};
 		851CD10B1F15103A00524C2A = {
 			isa = PBXGroup;
 			children = (
 				851CD1161F15103A00524C2A /* Cocoapods */,
+				850529CF1F17B764000E34E2 /* CocoapodsPane */,
 				851CD1151F15103A00524C2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				851CD1141F15103A00524C2A /* Cocoapods.app */,
+				850529CE1F17B764000E34E2 /* CocoapodsPane.prefPane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +166,7 @@
 				85773ADF1F17A845001B8083 /* Extensions */,
 				851CD11B1F15103A00524C2A /* Assets.xcassets */,
 				851CD11D1F15103A00524C2A /* Main.storyboard */,
+				850529F81F17BC54000E34E2 /* Progress.storyboard */,
 				851CD1201F15103A00524C2A /* Info.plist */,
 			);
 			path = Cocoapods;
@@ -113,6 +177,7 @@
 			children = (
 				85773ACB1F1676ED001B8083 /* CoordinatorService.swift */,
 				85773AC51F16745C001B8083 /* FileWatchService.swift */,
+				8520B5861F17CF25009D6910 /* ConfigurationService.swift */,
 				85B8BEC21F1525C600B1B4EE /* PodfilesService.swift */,
 				85773AC91F16769E001B8083 /* CocoapodsService.swift */,
 				85773AD91F175C02001B8083 /* UIService.swift */,
@@ -179,7 +244,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		850529CB1F17B764000E34E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				850529D11F17B764000E34E2 /* CocoapodsPane.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		850529CD1F17B764000E34E2 /* CocoapodsPane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 850529DC1F17B764000E34E2 /* Build configuration list for PBXNativeTarget "CocoapodsPane" */;
+			buildPhases = (
+				850529C91F17B764000E34E2 /* Sources */,
+				850529CA1F17B764000E34E2 /* Frameworks */,
+				850529CB1F17B764000E34E2 /* Headers */,
+				850529CC1F17B764000E34E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoapodsPane;
+			productName = CocoapodsPane;
+			productReference = 850529CE1F17B764000E34E2 /* CocoapodsPane.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
 		851CD1131F15103A00524C2A /* Cocoapods */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 851CD1231F15103A00524C2A /* Build configuration list for PBXNativeTarget "Cocoapods" */;
@@ -207,6 +301,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = piay;
 				TargetAttributes = {
+					850529CD1F17B764000E34E2 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 3DZ38T823P;
+						LastSwiftMigration = 0900;
+					};
 					851CD1131F15103A00524C2A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 3DZ38T823P;
@@ -228,11 +327,23 @@
 			projectRoot = "";
 			targets = (
 				851CD1131F15103A00524C2A /* Cocoapods */,
+				850529CD1F17B764000E34E2 /* CocoapodsPane */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		850529CC1F17B764000E34E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8520B5851F17C92E009D6910 /* Cocoapods.app in Resources */,
+				850529F11F17B7D8000E34E2 /* CocoapodViewItem.xib in Resources */,
+				850529D51F17B764000E34E2 /* CocoapodsPane.tiff in Resources */,
+				850529D81F17B764000E34E2 /* CocoapodsPane.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		851CD1121F15103A00524C2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,12 +351,43 @@
 				85B8BEBD1F15193600B1B4EE /* CocoapodViewItem.xib in Resources */,
 				851CD11C1F15103A00524C2A /* Assets.xcassets in Resources */,
 				851CD11F1F15103A00524C2A /* Main.storyboard in Resources */,
+				850529F91F17BC54000E34E2 /* Progress.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		850529C91F17B764000E34E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				850529EA1F17B7D8000E34E2 /* Podfile.swift in Sources */,
+				850529EC1F17B7D8000E34E2 /* ProcessProgress.swift in Sources */,
+				850529E21F17B7D8000E34E2 /* ProgressViewController.swift in Sources */,
+				8520B5881F17D0AF009D6910 /* ConfigurationService.swift in Sources */,
+				850529E11F17B7D8000E34E2 /* PodfilesViewController.swift in Sources */,
+				850529D31F17B764000E34E2 /* CocoapodsPane.m in Sources */,
+				850529ED1F17B7D8000E34E2 /* ListLayout.swift in Sources */,
+				850529EE1F17B7D8000E34E2 /* FileWatcher.swift in Sources */,
+				850529E41F17B7D8000E34E2 /* FileWatchService.swift in Sources */,
+				850529E61F17B7D8000E34E2 /* CocoapodsService.swift in Sources */,
+				850529F41F17B7D8000E34E2 /* NSWindow+Fade.swift in Sources */,
+				850529EB1F17B7D8000E34E2 /* ProgressCoordinator.swift in Sources */,
+				850529F21F17B7D8000E34E2 /* CocoapodViewItem.swift in Sources */,
+				850529E31F17B7D8000E34E2 /* CoordinatorService.swift in Sources */,
+				850529E71F17B7D8000E34E2 /* UIService.swift in Sources */,
+				850529F31F17B7D8000E34E2 /* ClosedRange+At.swift in Sources */,
+				850529E01F17B7D8000E34E2 /* Serivces.swift in Sources */,
+				850529F01F17B7D8000E34E2 /* Math.swift in Sources */,
+				850529E51F17B7D8000E34E2 /* PodfilesService.swift in Sources */,
+				850529E91F17B7D8000E34E2 /* FilesCollectionView.swift in Sources */,
+				850529E81F17B7D8000E34E2 /* TransparentWindow.swift in Sources */,
+				850529F61F17BAC7000E34E2 /* PodfilesPreferencesController.swift in Sources */,
+				850529EF1F17B7D8000E34E2 /* FileWatch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		851CD1101F15103A00524C2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +406,7 @@
 				85773ADA1F175C02001B8083 /* UIService.swift in Sources */,
 				85773ADC1F179022001B8083 /* Math.swift in Sources */,
 				85773AD61F175700001B8083 /* TransparentWindow.swift in Sources */,
+				8520B5871F17CF25009D6910 /* ConfigurationService.swift in Sources */,
 				85773AC81F167500001B8083 /* Serivces.swift in Sources */,
 				85773ACE1F167B06001B8083 /* FileWatch.swift in Sources */,
 				85773ADE1F17A832001B8083 /* ClosedRange+At.swift in Sources */,
@@ -277,6 +420,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		850529D61F17B764000E34E2 /* CocoapodsPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				850529D71F17B764000E34E2 /* Base */,
+			);
+			name = CocoapodsPane.xib;
+			sourceTree = "<group>";
+		};
 		851CD11D1F15103A00524C2A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +439,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		850529DA1F17B764000E34E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3DZ38T823P;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CocoapodsPane/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.piay.CocoapodsPane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocoapodsPane/CocoapodsPane-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Debug;
+		};
+		850529DB1F17B764000E34E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3DZ38T823P;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CocoapodsPane/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.piay.CocoapodsPane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocoapodsPane/CocoapodsPane-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
 		851CD1211F15103A00524C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -411,6 +619,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		850529DC1F17B764000E34E2 /* Build configuration list for PBXNativeTarget "CocoapodsPane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				850529DA1F17B764000E34E2 /* Debug */,
+				850529DB1F17B764000E34E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		851CD10F1F15103A00524C2A /* Build configuration list for PBXProject "Cocoapods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

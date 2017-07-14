@@ -1,19 +1,47 @@
 import Cocoa
+import ServiceManagement
 
-class PodfilesViewController: NSViewController {
+class PodfilesPreferencesController: NSObject {
 
     @IBOutlet weak var collectionView: NSCollectionView!
-
-    override func viewDidLoad() {
+    @IBOutlet weak var enableUpdatesSwitch: NSButton!
+    
+    override func awakeFromNib() {
         collectionView.collectionViewLayout = ListLayout()
+        enableUpdatesSwitch.state = Services.configuration.automaticUpdates ? .on : .off
 
         NotificationCenter.default.addObserver(forName: PodfilesService.PodfilesUpdated,
                                                object: nil,
                                                queue: nil) { [weak self] _ in
-            self?.podfilesUpdated()
+                                                self?.podfilesUpdated()
         }
     }
 
+    @IBAction func automaticUpdateChanged(_ sender: NSButton) {
+//        let a: [String] = SMCopyAllJobDictionaries(kSMDomainUserLaunchd) as! [String]
+//        if let CFArray = SMCopyAllJobDictionaries(kSMDomainUserLaunchd) {
+//            let NSArray: NSArray = CFArray.takeUnretainedValue()
+//            let array = Array(NSArray)
+//            for item in array {
+//                display("\(item)")
+//            }
+//        }
+
+        if sender.state == .on {
+            let bundle = CocoapodsPane.shared().bundle
+            guard let url = bundle.url(forResource: "Cocoapods", withExtension: "app") else {
+                return
+            }
+            try! NSWorkspace.shared.launchApplication(at: url, options: .andHide, configuration: [:])
+
+
+        } else {
+
+        }
+
+        Services.configuration.automaticUpdates = sender.state == .on
+    }
+    
     @IBAction func delete(_ sender: AnyObject) {
         let indexe = collectionView.selectionIndexes
         let index = indexe.index(after: indexe.startIndex)
@@ -27,14 +55,14 @@ class PodfilesViewController: NSViewController {
     }
 }
 
-extension PodfilesViewController {
+extension PodfilesPreferencesController {
 
     private func podfilesUpdated() {
         collectionView.reloadData()
     }
 }
 
-extension PodfilesViewController: NSCollectionViewDataSource {
+extension PodfilesPreferencesController: NSCollectionViewDataSource {
 
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return Services.podfiles.podfiles.count
@@ -52,9 +80,8 @@ extension PodfilesViewController: NSCollectionViewDataSource {
     }
 }
 
-extension PodfilesViewController: NSCollectionViewDelegate {
+extension PodfilesPreferencesController: NSCollectionViewDelegate {
 
     func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
     }
 }
-

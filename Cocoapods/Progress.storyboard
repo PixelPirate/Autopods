@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13156.6"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="QPT-Bf-aS2">
+            <objects>
+                <windowController storyboardIdentifier="progress" id="Hbb-YY-eVC" customClass="TransparentWindowController" customModule="Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Cocoapods" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" id="Qdo-Uy-2ou">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="363" width="286" height="107"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+                        <connections>
+                            <outlet property="delegate" destination="Hbb-YY-eVC" id="FuX-Q9-6YM"/>
+                        </connections>
+                    </window>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="closeButton" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="iJT-nt-kCL" kind="relationship" relationship="window.shadowedContentViewController" id="AsD-uR-8ZQ"/>
+                    </connections>
+                </windowController>
+                <customObject id="xyU-sT-2yp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="367.5"/>
+        </scene>
+        <!--Progress View Controller-->
+        <scene sceneID="pje-fA-j5Q">
+            <objects>
+                <viewController id="iJT-nt-kCL" customClass="ProgressViewController" customModule="Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="9oz-nQ-C4B">
+                        <rect key="frame" x="0.0" y="0.0" width="286" height="105"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <progressIndicator wantsLayer="YES" maxValue="100" doubleValue="69" bezeled="NO" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="HdY-rF-iKg">
+                                <rect key="frame" x="118" y="22" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="29U-rw-4eO"/>
+                                    <constraint firstAttribute="width" secondItem="HdY-rF-iKg" secondAttribute="height" multiplier="1:1" id="yCk-1E-pKK"/>
+                                </constraints>
+                            </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4oF-Jm-ZNA">
+                                <rect key="frame" x="-2" y="80" width="290" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Installing Cocoapods ..." id="a9T-Bs-8eB">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="HdY-rF-iKg" secondAttribute="bottom" constant="20" id="9Hy-x1-Eyj"/>
+                            <constraint firstAttribute="trailing" secondItem="4oF-Jm-ZNA" secondAttribute="trailing" id="BAs-qr-ljN"/>
+                            <constraint firstItem="4oF-Jm-ZNA" firstAttribute="leading" secondItem="9oz-nQ-C4B" secondAttribute="leading" id="N5h-Gn-96w"/>
+                            <constraint firstItem="HdY-rF-iKg" firstAttribute="top" secondItem="4oF-Jm-ZNA" secondAttribute="bottom" constant="8" id="dcN-ny-3GQ"/>
+                            <constraint firstItem="HdY-rF-iKg" firstAttribute="centerX" secondItem="9oz-nQ-C4B" secondAttribute="centerX" id="pvU-ES-0Nk"/>
+                            <constraint firstItem="4oF-Jm-ZNA" firstAttribute="top" secondItem="9oz-nQ-C4B" secondAttribute="top" constant="8" id="tSQ-ZF-1y8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressIndicator" destination="HdY-rF-iKg" id="0O1-OB-rwO"/>
+                    </connections>
+                </viewController>
+                <customObject id="omH-4u-jOl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="625"/>
+        </scene>
+    </scenes>
+</document>

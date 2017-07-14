@@ -5,8 +5,7 @@ final class ProgressViewController: NSViewController {
     @IBOutlet weak var progressIndicator: NSProgressIndicator!
     
     static func makeWindow() -> (controller: ProgressViewController, window: NSWindowController) {
-        let window = NSStoryboard(name: NSStoryboard.main, bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier.progress) as! NSWindowController
-
+        let window = NSStoryboard(name: NSStoryboard.progress, bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier.progress) as! NSWindowController
         guard let viewController = window.contentViewController as? ProgressViewController else {
             fatalError()
         }
@@ -41,6 +40,7 @@ final class ProgressViewController: NSViewController {
 extension NSStoryboard {
 
     static let main = NSStoryboard.Name("Main")
+    static let progress = NSStoryboard.Name("Progress")
 }
 
 extension NSStoryboard.SceneIdentifier {

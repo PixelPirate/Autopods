@@ -46,7 +46,6 @@ final class ProcessProgress: Progress {
 
         DispatchQueue.global(qos: .background).async { [unowned self] in
             self.process.waitUntilExit()
-
             self.status = .ended
         }
     }
