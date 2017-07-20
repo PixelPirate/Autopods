@@ -89,7 +89,7 @@
 		85773AC91F16769E001B8083 /* CocoapodsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoapodsService.swift; sourceTree = "<group>"; };
 		85773ACB1F1676ED001B8083 /* CoordinatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorService.swift; sourceTree = "<group>"; };
 		85773ACD1F167B06001B8083 /* FileWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWatch.swift; sourceTree = "<group>"; };
-		85773AD51F175700001B8083 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransparentWindow.swift; path = "../../../mac-ping/Ping-Mac/Ping/TransparentWindow.swift"; sourceTree = "<group>"; };
+		85773AD51F175700001B8083 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
 		85773AD71F175A2D001B8083 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		85773AD91F175C02001B8083 /* UIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIService.swift; sourceTree = "<group>"; };
 		85773ADB1F179021001B8083 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };

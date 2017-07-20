@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "79213871377BA20EE6F585E6DD70096754B9E782",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "79213871377BA20EE6F585E6DD70096754B9E782" : 9223372036854775807,
+    "779C9D06DA83DD6B73E051DFE112D6E7CD760C0A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D24AA12A-6300-4C0A-AF78-622B7732524F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "79213871377BA20EE6F585E6DD70096754B9E782" : "cocoapods\/",
+    "779C9D06DA83DD6B73E051DFE112D6E7CD760C0A" : "mac-ping\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Cocoapods",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Cocoapods.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.check24.de:7999\/nat\/mac-ping.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "779C9D06DA83DD6B73E051DFE112D6E7CD760C0A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.check24.de:7999\/~patrick.horlebein\/cocoapods.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "79213871377BA20EE6F585E6DD70096754B9E782"
+    }
+  ]
+}
