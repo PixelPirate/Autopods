@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "851CD1131F15103A00524C2A"
-               BuildableName = "Cocoapods.app"
-               BlueprintName = "Cocoapods"
+               BuildableName = "Autopods.app"
+               BlueprintName = "Autopods"
                ReferencedContainer = "container:Cocoapods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
