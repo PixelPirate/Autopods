@@ -18,7 +18,7 @@ class TransparentWindowController: NSWindowController {
         }
 
         window.isOpaque = false
-        window.styleMask = NSWindowStyleMask([
+        window.styleMask = NSWindow.StyleMask([
             .nonactivatingPanel,
             .titled,
             .fullSizeContentView,
@@ -34,17 +34,17 @@ class TransparentWindowController: NSWindowController {
         window.titleVisibility = .hidden
         window.showsToolbarButton = false
         window.isMovable = false
-        window.standardWindowButton(NSWindowButton.fullScreenButton)?.isHidden = true
-        window.standardWindowButton(NSWindowButton.miniaturizeButton)?.isHidden = true
-        window.standardWindowButton(NSWindowButton.zoomButton)?.isHidden = true
-        window.level = Int(CGWindowLevelForKey(.floatingWindow))
+        window.standardWindowButton(NSWindow.ButtonType.fullScreenButton)?.isHidden = true
+        window.standardWindowButton(NSWindow.ButtonType.miniaturizeButton)?.isHidden = true
+        window.standardWindowButton(NSWindow.ButtonType.zoomButton)?.isHidden = true
+        window.level = .floating
 
-        window.appearance = NSAppearance(named: NSAppearanceNameVibrantDark)
+        window.appearance = NSAppearance(named: NSAppearance.Name.vibrantDark)
         window.contentView?.wantsLayer = true
         window.invalidateShadow()
 
         //.screens()[0] is the screen with the menu bar.
-        if let screen = NSScreen.main() {
+        if let screen = NSScreen.main {
             let visibleFrame = screen.visibleFrame
             let windowSize = window.frame.size
             let origin = NSPoint(x: visibleFrame.origin.x + visibleFrame.size.width - windowSize.width - 20,

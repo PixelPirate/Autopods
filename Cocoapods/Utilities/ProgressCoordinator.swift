@@ -11,12 +11,16 @@ final class ProgressCoordinator {
         self.window = window
         self.progress = progress
 
-        self.progress.changed = { [unowned self] in
-            switch self.progress.status {
+        self.progress.changed = { [weak self] in
+            guard let coordinator = self else {
+                return
+            }
+
+            switch coordinator.progress.status {
             case .ended:
                 DispatchQueue.main.async {
                     controller.animate(toValue: 1, completion: {
-                        self.ended?()
+                        coordinator.ended?()
                     })
                 }
             case .progress(let progress):
@@ -25,6 +29,10 @@ final class ProgressCoordinator {
                 break
             }
         }
+    }
+
+    deinit {
+        close()
     }
 
     func close() {

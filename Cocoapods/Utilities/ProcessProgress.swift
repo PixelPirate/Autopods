@@ -44,9 +44,13 @@ final class ProcessProgress: Progress {
             self.status = .progress(self.funcy(percent))
         }
 
-        DispatchQueue.global(qos: .background).async { [unowned self] in
-            self.process.waitUntilExit()
-            self.status = .ended
+        DispatchQueue.global(qos: .background).async { [weak self] in
+            self?.process.waitUntilExit()
+            self?.status = .ended
         }
+    }
+
+    deinit {
+        process.terminate()
     }
 }
