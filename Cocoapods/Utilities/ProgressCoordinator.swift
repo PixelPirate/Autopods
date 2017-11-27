@@ -11,6 +11,8 @@ final class ProgressCoordinator {
         self.window = window
         self.progress = progress
 
+        // TODO: Add ability to `Progress` to emit errors and warnings.
+        
         self.progress.changed = { [weak self] in
             guard let coordinator = self else {
                 return
