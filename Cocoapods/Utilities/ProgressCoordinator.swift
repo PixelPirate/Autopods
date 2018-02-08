@@ -27,8 +27,11 @@ final class ProgressCoordinator {
                 }
             case .progress(let progress):
                 controller.progressIndicator.doubleValue = progress * 100
-            default:
+            case .error(ProcessProgress.Error.processFailed(let path, let error)):
+                // TODO: Make progress view larger, display output, provide button to launch terminal.
+                print("Process (\(path)) failed with error:\n\(error)")
                 break
+            default: break
             }
         }
     }
@@ -42,33 +45,4 @@ final class ProgressCoordinator {
     }
 
     var ended: (() -> Void)? = nil
-}
-
-class Progress {
-
-    enum Status {
-        case pending
-        case progress(Double)
-        case ended
-    }
-
-    internal(set) var status: Status = .pending {
-        didSet {
-            changed?()
-        }
-    }
-
-    var changed: (() -> Void)? = nil
-}
-
-extension Progress.Status: Equatable {
-
-    static func ==(lhs: Progress.Status, rhs: Progress.Status) -> Bool {
-        switch (lhs, rhs) {
-        case (.pending, pending): return true
-        case (.progress(let p1), .progress(let p2)) where p1 == p2: return true
-        case (.ended, .ended): return true
-        default: return false
-        }
-    }
 }

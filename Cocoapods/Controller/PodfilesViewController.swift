@@ -3,9 +3,11 @@ import Cocoa
 class PodfilesViewController: NSViewController {
 
     @IBOutlet weak var collectionView: NSCollectionView!
+    @IBOutlet weak var statusTextField: NSTextField!
 
     override func viewDidLoad() {
         collectionView.collectionViewLayout = ListLayout()
+        updateStatusText()
 
         NotificationCenter.default.addObserver(forName: PodfilesService.PodfilesUpdated,
                                                object: nil,
@@ -31,6 +33,7 @@ extension PodfilesViewController {
 
     private func podfilesUpdated() {
         collectionView.reloadData()
+        updateStatusText()
     }
 }
 
@@ -58,3 +61,25 @@ extension PodfilesViewController: NSCollectionViewDelegate {
     }
 }
 
+private extension PodfilesViewController {
+
+    func updateStatusText() {
+        let numberOfPods = Services.podfiles.podfiles.count
+        if numberOfPods == 0 {
+            statusTextField.stringValue = "Drag a Podfile into Autopods to begin tracking."
+        } else {
+            let pluralSuffix = numberOfPods > 1 ? "s" : ""
+            let text = String.localizedStringWithFormat("Tracking %d pod%@", numberOfPods, pluralSuffix)
+
+            let darkGreen = NSColor(red: 0.342, green: 0.667, blue: 0.447, alpha: 1)
+            let attributedText = NSMutableAttributedString(string: "✔︎ ", attributes: [NSAttributedStringKey.foregroundColor: darkGreen])
+            attributedText.append(NSMutableAttributedString(string: text))
+
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.alignment = .center
+            attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSRange(0..<attributedText.length))
+
+            statusTextField.attributedStringValue = attributedText
+        }
+    }
+}

@@ -19,10 +19,24 @@ final class FileWatcher {
     }
 
     static func gitURL(from url: URL) -> URL {
-        var git = url.deletingLastPathComponent()
-        git.deleteLastPathComponent()
-        git.appendPathComponent(".git")
-        git.appendPathComponent("HEAD")
-        return git
+        func hasGit(at url: URL) -> Bool {
+            let url = url.appendingPathComponent(".git")
+            return FileManager.default.fileExists(atPath: url.path)
+        }
+
+        func findGit(at url: URL, maxDepth: Int = 4) -> URL {
+            if hasGit(at: url) {
+                return url
+            } else {
+                let depth = maxDepth - 1
+                guard depth > 0 else {
+                    return url
+                }
+                return findGit(at: url.deletingLastPathComponent(), maxDepth: depth)
+            }
+        }
+
+        let gitURL = findGit(at: url).appendingPathComponent(".git").appendingPathComponent("HEAD")
+        return gitURL
     }
 }

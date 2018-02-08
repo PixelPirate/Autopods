@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PodfilesViewController.updateStatusText():PodfilesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "statusTextField">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CoordinatorService.coordinate(added:):CoordinatorService.swift">
+      </ContextState>
+      <ContextState
+         contextName = "hasGit #1 (at:) in static FileWatcher.gitURL(from:):FileWatcher.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "FileManager.default.fileExists(atPath: url.path)">
+            </PersistentString>
+            <PersistentString
+               value = "url.absoluteString">
+            </PersistentString>
+            <PersistentString
+               value = "url.path">
+            </PersistentString>
+            <PersistentString
+               value = "FileManager.default.fileExists(atPath: url.absoluteString)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FileWatcher.init(target:action:):FileWatcher.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.url.path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

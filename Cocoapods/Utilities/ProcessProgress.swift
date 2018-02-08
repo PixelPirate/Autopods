@@ -2,7 +2,7 @@ import Foundation
 
 final class ProcessProgress: Progress {
 
-    let process: Process
+    let process: LoggingProcess
     var timer: Timer? = nil
 
     func funcy(_ x: Double) -> Double {
@@ -23,7 +23,7 @@ final class ProcessProgress: Progress {
         }
     }
 
-    init(process: Process) {
+    init(process: LoggingProcess) {
         self.process = process
         super.init()
 
@@ -45,12 +45,29 @@ final class ProcessProgress: Progress {
         }
 
         DispatchQueue.global(qos: .background).async { [weak self] in
-            self?.process.waitUntilExit()
-            self?.status = .ended
+            guard let progress = self else {
+                return
+            }
+
+            progress.process.waitUntilExit()
+
+            guard progress.process.terminationStatus == 0 else {
+                progress.status = .error(Error.processFailed(path: progress.process.launchPath ?? "", error: progress.process.error))
+                return
+            }
+
+            progress.status = .ended
         }
     }
 
     deinit {
         process.terminate()
+    }
+}
+
+extension ProcessProgress {
+
+    enum Error: Swift.Error {
+        case processFailed(path: String, error: String)
     }
 }

@@ -34,6 +34,7 @@
 		850529F41F17B7D8000E34E2 /* NSWindow+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */; };
 		850529F61F17BAC7000E34E2 /* PodfilesPreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850529F51F17BAC7000E34E2 /* PodfilesPreferencesController.swift */; };
 		850529F91F17BC54000E34E2 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850529F81F17BC54000E34E2 /* Progress.storyboard */; };
+		8505E9FC1FCEB5700066D14B /* Storyboard+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */; };
 		8515531F1F17AD10006389C6 /* NSWindow+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */; };
 		851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553201F17B3C4006389C6 /* ProgressCoordinator.swift */; };
 		851553231F17B417006389C6 /* ProcessProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553221F17B417006389C6 /* ProcessProgress.swift */; };
@@ -44,6 +45,7 @@
 		8520B5851F17C92E009D6910 /* Autopods.app in Resources */ = {isa = PBXBuildFile; fileRef = 851CD1141F15103A00524C2A /* Autopods.app */; };
 		8520B5871F17CF25009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
 		8520B5881F17D0AF009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
+		85768AF51FCF1329008A1A96 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85768AF41FCF1329008A1A96 /* Progress.swift */; };
 		85773AC41F1672AA001B8083 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC31F1672AA001B8083 /* FileWatcher.swift */; };
 		85773AC61F16745C001B8083 /* FileWatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC51F16745C001B8083 /* FileWatchService.swift */; };
 		85773AC81F167500001B8083 /* Serivces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC71F167500001B8083 /* Serivces.swift */; };
@@ -73,6 +75,7 @@
 		850529DD1F17B784000E34E2 /* CocoapodsPane-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoapodsPane-Bridging-Header.h"; sourceTree = "<group>"; };
 		850529F51F17BAC7000E34E2 /* PodfilesPreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodfilesPreferencesController.swift; sourceTree = "<group>"; };
 		850529F81F17BC54000E34E2 /* Progress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
+		8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Names.swift"; sourceTree = "<group>"; };
 		8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Fade.swift"; sourceTree = "<group>"; };
 		851553201F17B3C4006389C6 /* ProgressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCoordinator.swift; sourceTree = "<group>"; };
 		851553221F17B417006389C6 /* ProcessProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessProgress.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		851CD11E1F15103A00524C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		851CD1201F15103A00524C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8520B5861F17CF25009D6910 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
+		85768AF41FCF1329008A1A96 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		85773AC31F1672AA001B8083 /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
 		85773AC51F16745C001B8083 /* FileWatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatchService.swift; sourceTree = "<group>"; };
 		85773AC71F167500001B8083 /* Serivces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serivces.swift; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 				85773AC31F1672AA001B8083 /* FileWatcher.swift */,
 				85773ACD1F167B06001B8083 /* FileWatch.swift */,
 				85773ADB1F179021001B8083 /* Math.swift */,
+				85768AF41FCF1329008A1A96 /* Progress.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			children = (
 				85773ADD1F17A832001B8083 /* ClosedRange+At.swift */,
 				8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */,
+				8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 				85B8BEC51F15292000B1B4EE /* FilesCollectionView.swift in Sources */,
 				85B8BEC11F1525BB00B1B4EE /* Podfile.swift in Sources */,
 				85B8BEBF1F151C1300B1B4EE /* ListLayout.swift in Sources */,
+				85768AF51FCF1329008A1A96 /* Progress.swift in Sources */,
 				851CD11A1F15103A00524C2A /* PodfilesViewController.swift in Sources */,
 				85773ACA1F16769E001B8083 /* CocoapodsService.swift in Sources */,
 				85773AC41F1672AA001B8083 /* FileWatcher.swift in Sources */,
@@ -412,6 +419,7 @@
 				85773ADE1F17A832001B8083 /* ClosedRange+At.swift in Sources */,
 				85B8BEC31F1525C600B1B4EE /* PodfilesService.swift in Sources */,
 				851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */,
+				8505E9FC1FCEB5700066D14B /* Storyboard+Names.swift in Sources */,
 				85773AC61F16745C001B8083 /* FileWatchService.swift in Sources */,
 				85773ACC1F1676ED001B8083 /* CoordinatorService.swift in Sources */,
 			);

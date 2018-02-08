@@ -1,11 +1,3 @@
-//
-//  TransparentWindow.swift
-//  TestWindow
-//
-//  Created by Barbara Reichart on 20/01/17.
-//  Copyright © 2017 Barbara Reichart. All rights reserved.
-//
-
 import Cocoa
 
 class TransparentWindowController: NSWindowController {
