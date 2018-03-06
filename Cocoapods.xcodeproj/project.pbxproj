@@ -37,6 +37,8 @@
 		8505E9FC1FCEB5700066D14B /* Storyboard+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */; };
 		8505EC0F204E898B001BE4A8 /* LoggingProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8505EC0E204E898B001BE4A8 /* LoggingProcess.swift */; };
 		8505EC13204ED2D0001BE4A8 /* OpenTerminal.applescript in Resources */ = {isa = PBXBuildFile; fileRef = 8505EC12204ED2C2001BE4A8 /* OpenTerminal.applescript */; };
+		8505EC15204EF1D0001BE4A8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8505EC14204EF1D0001BE4A8 /* Repository.swift */; };
+		8505EC17204EF3FB001BE4A8 /* BlockMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8505EC16204EF3FB001BE4A8 /* BlockMenuItem.swift */; };
 		8515531F1F17AD10006389C6 /* NSWindow+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */; };
 		851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553201F17B3C4006389C6 /* ProgressCoordinator.swift */; };
 		851553231F17B417006389C6 /* ProcessProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553221F17B417006389C6 /* ProcessProgress.swift */; };
@@ -80,6 +82,8 @@
 		8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Names.swift"; sourceTree = "<group>"; };
 		8505EC0E204E898B001BE4A8 /* LoggingProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingProcess.swift; sourceTree = "<group>"; };
 		8505EC12204ED2C2001BE4A8 /* OpenTerminal.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = OpenTerminal.applescript; sourceTree = "<group>"; };
+		8505EC14204EF1D0001BE4A8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		8505EC16204EF3FB001BE4A8 /* BlockMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockMenuItem.swift; sourceTree = "<group>"; };
 		8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Fade.swift"; sourceTree = "<group>"; };
 		851553201F17B3C4006389C6 /* ProgressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCoordinator.swift; sourceTree = "<group>"; };
 		851553221F17B417006389C6 /* ProcessProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessProgress.swift; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 				85773ADB1F179021001B8083 /* Math.swift */,
 				85768AF41FCF1329008A1A96 /* Progress.swift */,
 				8505EC0E204E898B001BE4A8 /* LoggingProcess.swift */,
+				8505EC14204EF1D0001BE4A8 /* Repository.swift */,
+				8505EC16204EF3FB001BE4A8 /* BlockMenuItem.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				85773AD81F175A2D001B8083 /* ProgressViewController.swift in Sources */,
 				851553231F17B417006389C6 /* ProcessProgress.swift in Sources */,
 				85B8BEBB1F15145800B1B4EE /* CocoapodViewItem.swift in Sources */,
+				8505EC15204EF1D0001BE4A8 /* Repository.swift in Sources */,
 				85B8BEC51F15292000B1B4EE /* FilesCollectionView.swift in Sources */,
 				85B8BEC11F1525BB00B1B4EE /* Podfile.swift in Sources */,
 				85B8BEBF1F151C1300B1B4EE /* ListLayout.swift in Sources */,
@@ -428,6 +435,7 @@
 				85773ADA1F175C02001B8083 /* UIService.swift in Sources */,
 				85773ADC1F179022001B8083 /* Math.swift in Sources */,
 				85773AD61F175700001B8083 /* TransparentWindow.swift in Sources */,
+				8505EC17204EF3FB001BE4A8 /* BlockMenuItem.swift in Sources */,
 				8520B5871F17CF25009D6910 /* ConfigurationService.swift in Sources */,
 				85773AC81F167500001B8083 /* Serivces.swift in Sources */,
 				85773ACE1F167B06001B8083 /* FileWatch.swift in Sources */,

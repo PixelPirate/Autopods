@@ -7,11 +7,15 @@ final class CoordinatorService {
 
     func coordinate(added podfile: Podfile) {
         Services.fileWatch.start(watching: podfile.url) { [unowned self] in
-            let progress = Services.cocoapods.update(podfile)
-            self.progressCoordinator = Services.userInterfaceService.show(progress)
-            self.progressCoordinator?.ended = {
-                self.progressCoordinator = nil
-            }
+            self.coordinate(updated: podfile)
+        }
+    }
+
+    func coordinate(updated podfile: Podfile) {
+        let progress = Services.cocoapods.update(podfile)
+        self.progressCoordinator = Services.userInterfaceService.show(progress)
+        self.progressCoordinator?.ended = {
+            self.progressCoordinator = nil
         }
     }
 }
