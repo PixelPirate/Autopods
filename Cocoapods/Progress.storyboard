@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13156.6"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Window Controller-->
         <scene sceneID="QPT-Bf-aS2">
             <objects>
-                <windowController storyboardIdentifier="progress" id="Hbb-YY-eVC" customClass="TransparentWindowController" customModule="Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Cocoapods" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" id="Qdo-Uy-2ou">
+                <windowController storyboardIdentifier="progress" id="Hbb-YY-eVC" customClass="TransparentWindowController" customModule="Autopods" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Autopods" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" id="Qdo-Uy-2ou">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="363" width="286" height="107"/>
+                        <rect key="contentRect" x="1593" y="1023" width="286" height="107"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
                         <connections>
                             <outlet property="delegate" destination="Hbb-YY-eVC" id="FuX-Q9-6YM"/>
@@ -33,7 +35,7 @@
         <!--Progress View Controller-->
         <scene sceneID="pje-fA-j5Q">
             <objects>
-                <viewController id="iJT-nt-kCL" customClass="ProgressViewController" customModule="Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iJT-nt-kCL" customClass="ProgressViewController" customModule="Autopods" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="9oz-nQ-C4B">
                         <rect key="frame" x="0.0" y="0.0" width="286" height="105"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -64,12 +66,74 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="errorView" destination="sw6-63-ZiN" id="nch-KJ-2nq"/>
                         <outlet property="progressIndicator" destination="HdY-rF-iKg" id="0O1-OB-rwO"/>
                     </connections>
                 </viewController>
                 <customObject id="omH-4u-jOl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customView id="sw6-63-ZiN" customClass="ErrorView" customModule="Autopods" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bmN-On-nV3">
+                            <rect key="frame" x="18" y="263" width="250" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="xUA-wh-1mz">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" translatesAutoresizingMaskIntoConstraints="NO" id="Qcd-x6-PRc">
+                            <rect key="frame" x="20" y="28" width="246" height="227"/>
+                            <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="vkH-aV-BVk">
+                                <rect key="frame" x="0.0" y="0.0" width="246" height="227"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textView editable="NO" drawsBackground="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" incrementalSearchingEnabled="YES" allowsCharacterPickerTouchBarItem="NO" allowsNonContiguousLayout="YES" textCompletion="NO" id="MC8-KJ-Cku">
+                                        <rect key="frame" x="0.0" y="0.0" width="246" height="227"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="textColor" name="selectedMenuItemTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" white="0.95999999999999996" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <size key="minSize" width="246" height="227"/>
+                                        <size key="maxSize" width="463" height="10000000"/>
+                                        <color key="insertionPointColor" name="selectedMenuItemTextColor" catalog="System" colorSpace="catalog"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </clipView>
+                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="B33-hA-Jls">
+                                <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="oYM-o4-94X">
+                                <rect key="frame" x="230" y="0.0" width="16" height="227"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                        </scrollView>
+                        <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" horizontalHuggingPriority="260" verticalHuggingPriority="260" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ryy-zK-vuH">
+                            <rect key="frame" x="20" y="20" width="246" height="0.0"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bmN-On-nV3" secondAttribute="trailing" constant="20" symbolic="YES" id="1Ss-ql-OLt"/>
+                        <constraint firstAttribute="trailing" secondItem="Ryy-zK-vuH" secondAttribute="trailing" constant="20" symbolic="YES" id="2bZ-gy-J2C"/>
+                        <constraint firstItem="Ryy-zK-vuH" firstAttribute="leading" secondItem="sw6-63-ZiN" secondAttribute="leading" constant="20" symbolic="YES" id="3Oa-ic-Fi3"/>
+                        <constraint firstItem="Qcd-x6-PRc" firstAttribute="leading" secondItem="sw6-63-ZiN" secondAttribute="leading" constant="20" symbolic="YES" id="9qD-GD-eYK"/>
+                        <constraint firstItem="Ryy-zK-vuH" firstAttribute="top" secondItem="Qcd-x6-PRc" secondAttribute="bottom" constant="8" symbolic="YES" id="A8q-dI-xMN"/>
+                        <constraint firstItem="Qcd-x6-PRc" firstAttribute="top" secondItem="bmN-On-nV3" secondAttribute="bottom" constant="8" symbolic="YES" id="I6s-ZJ-Mbt"/>
+                        <constraint firstAttribute="bottom" secondItem="Ryy-zK-vuH" secondAttribute="bottom" constant="20" symbolic="YES" id="bVd-PJ-RYs"/>
+                        <constraint firstItem="bmN-On-nV3" firstAttribute="leading" secondItem="sw6-63-ZiN" secondAttribute="leading" constant="20" symbolic="YES" id="i8o-th-7IG"/>
+                        <constraint firstItem="bmN-On-nV3" firstAttribute="top" secondItem="sw6-63-ZiN" secondAttribute="top" constant="20" symbolic="YES" id="utq-IP-FsO"/>
+                        <constraint firstAttribute="trailing" secondItem="Qcd-x6-PRc" secondAttribute="trailing" constant="20" symbolic="YES" id="yBF-d2-dpA"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="actionsStack" destination="Ryy-zK-vuH" id="tUA-RC-ILy"/>
+                        <outlet property="messageText" destination="MC8-KJ-Cku" id="1Qe-Dn-USw"/>
+                        <outlet property="titleLabel" destination="bmN-On-nV3" id="Y3F-fc-QB3"/>
+                    </connections>
+                </customView>
             </objects>
-            <point key="canvasLocation" x="515" y="625"/>
+            <point key="canvasLocation" x="515" y="624.5"/>
         </scene>
     </scenes>
 </document>

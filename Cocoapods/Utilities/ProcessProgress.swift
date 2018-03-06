@@ -31,11 +31,6 @@ final class ProcessProgress: Progress {
         let start = CFAbsoluteTimeGetCurrent()
         let end = start + max
         timer = Timer.scheduledTimer(withTimeInterval: 0.016, repeats: true) { timer in
-            guard self.status != .ended else {
-                timer.invalidate()
-                return
-            }
-
             let current = CFAbsoluteTimeGetCurrent()
             let percent = inverseLerp(from: start, to: end, value: current)
             if percent > 1 {
@@ -44,6 +39,11 @@ final class ProcessProgress: Progress {
             self.status = .progress(self.funcy(percent))
         }
 
+// Debug, always show error.
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            self.status = .error(Error.processFailed(path: self.process.currentDirectoryPath , error: self.process.error))
+//        }
+
         DispatchQueue.global(qos: .background).async { [weak self] in
             guard let progress = self else {
                 return
@@ -51,8 +51,10 @@ final class ProcessProgress: Progress {
 
             progress.process.waitUntilExit()
 
+            progress.timer?.invalidate()
+
             guard progress.process.terminationStatus == 0 else {
-                progress.status = .error(Error.processFailed(path: progress.process.launchPath ?? "", error: progress.process.error))
+                progress.status = .error(Error.processFailed(path: progress.process.currentDirectoryPath, error: progress.process.error))
                 return
             }
 

@@ -35,6 +35,8 @@
 		850529F61F17BAC7000E34E2 /* PodfilesPreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850529F51F17BAC7000E34E2 /* PodfilesPreferencesController.swift */; };
 		850529F91F17BC54000E34E2 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850529F81F17BC54000E34E2 /* Progress.storyboard */; };
 		8505E9FC1FCEB5700066D14B /* Storyboard+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */; };
+		8505EC0F204E898B001BE4A8 /* LoggingProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8505EC0E204E898B001BE4A8 /* LoggingProcess.swift */; };
+		8505EC13204ED2D0001BE4A8 /* OpenTerminal.applescript in Resources */ = {isa = PBXBuildFile; fileRef = 8505EC12204ED2C2001BE4A8 /* OpenTerminal.applescript */; };
 		8515531F1F17AD10006389C6 /* NSWindow+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */; };
 		851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553201F17B3C4006389C6 /* ProgressCoordinator.swift */; };
 		851553231F17B417006389C6 /* ProcessProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851553221F17B417006389C6 /* ProcessProgress.swift */; };
@@ -76,6 +78,8 @@
 		850529F51F17BAC7000E34E2 /* PodfilesPreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodfilesPreferencesController.swift; sourceTree = "<group>"; };
 		850529F81F17BC54000E34E2 /* Progress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
 		8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Names.swift"; sourceTree = "<group>"; };
+		8505EC0E204E898B001BE4A8 /* LoggingProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingProcess.swift; sourceTree = "<group>"; };
+		8505EC12204ED2C2001BE4A8 /* OpenTerminal.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = OpenTerminal.applescript; sourceTree = "<group>"; };
 		8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Fade.swift"; sourceTree = "<group>"; };
 		851553201F17B3C4006389C6 /* ProgressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCoordinator.swift; sourceTree = "<group>"; };
 		851553221F17B417006389C6 /* ProcessProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessProgress.swift; sourceTree = "<group>"; };
@@ -138,6 +142,14 @@
 			path = CocoapodsPane;
 			sourceTree = "<group>";
 		};
+		8505EC10204ECFA9001BE4A8 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				8505EC12204ED2C2001BE4A8 /* OpenTerminal.applescript */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		851CD10B1F15103A00524C2A = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +171,7 @@
 		851CD1161F15103A00524C2A /* Cocoapods */ = {
 			isa = PBXGroup;
 			children = (
+				8505EC10204ECFA9001BE4A8 /* Scripts */,
 				851CD1171F15103A00524C2A /* AppDelegate.swift */,
 				85773AC71F167500001B8083 /* Serivces.swift */,
 				85773AD11F17554A001B8083 /* Controller */,
@@ -216,6 +229,7 @@
 				85773ACD1F167B06001B8083 /* FileWatch.swift */,
 				85773ADB1F179021001B8083 /* Math.swift */,
 				85768AF41FCF1329008A1A96 /* Progress.swift */,
+				8505EC0E204E898B001BE4A8 /* LoggingProcess.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -356,6 +370,7 @@
 			files = (
 				85B8BEBD1F15193600B1B4EE /* CocoapodViewItem.xib in Resources */,
 				851CD11C1F15103A00524C2A /* Assets.xcassets in Resources */,
+				8505EC13204ED2D0001BE4A8 /* OpenTerminal.applescript in Resources */,
 				851CD11F1F15103A00524C2A /* Main.storyboard in Resources */,
 				850529F91F17BC54000E34E2 /* Progress.storyboard in Resources */,
 			);
@@ -419,6 +434,7 @@
 				85773ADE1F17A832001B8083 /* ClosedRange+At.swift in Sources */,
 				85B8BEC31F1525C600B1B4EE /* PodfilesService.swift in Sources */,
 				851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */,
+				8505EC0F204E898B001BE4A8 /* LoggingProcess.swift in Sources */,
 				8505E9FC1FCEB5700066D14B /* Storyboard+Names.swift in Sources */,
 				85773AC61F16745C001B8083 /* FileWatchService.swift in Sources */,
 				85773ACC1F1676ED001B8083 /* CoordinatorService.swift in Sources */,

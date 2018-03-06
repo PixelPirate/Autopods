@@ -11,8 +11,6 @@ final class ProgressCoordinator {
         self.window = window
         self.progress = progress
 
-        // TODO: Add ability to `Progress` to emit errors and warnings.
-        
         self.progress.changed = { [weak self] in
             guard let coordinator = self else {
                 return
@@ -28,8 +26,28 @@ final class ProgressCoordinator {
             case .progress(let progress):
                 controller.progressIndicator.doubleValue = progress * 100
             case .error(ProcessProgress.Error.processFailed(let path, let error)):
-                // TODO: Make progress view larger, display output, provide button to launch terminal.
-                print("Process (\(path)) failed with error:\n\(error)")
+                DispatchQueue.main.async {
+                    controller.presentError(
+                        title: "Es ist ein Fehler aufgetreten",
+                        message: "\(path)\n\(error)",
+                        actions: [
+                            "Schließen": {
+                                controller.animate(toValue: 1, completion: {
+                                    coordinator.ended?()
+                                })
+                            },
+                            "Terminal": {
+                                guard let url = Bundle.main.url(forResource: "OpenTerminal", withExtension: "applescript"), let template = try? String(contentsOf: url) else {
+                                    return
+                                }
+
+                                let source = template.replacingOccurrences(of: "PATH", with: path)
+                                let script = NSAppleScript(source: source)
+                                script?.executeAndReturnError(nil)
+                            }
+                        ]
+                    )
+                }
                 break
             default: break
             }
