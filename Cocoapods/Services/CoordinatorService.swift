@@ -11,8 +11,8 @@ final class CoordinatorService {
         }
     }
 
-    func coordinate(updated podfile: Podfile) {
-        let progress = Services.cocoapods.update(podfile)
+    func coordinate(updated podfile: Podfile, launch: (Podfile) -> Progress = Services.cocoapods.install) {
+        let progress = launch(podfile)
         self.progressCoordinator = Services.userInterfaceService.show(progress)
         self.progressCoordinator?.ended = {
             self.progressCoordinator = nil
