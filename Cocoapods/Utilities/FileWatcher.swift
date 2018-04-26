@@ -7,7 +7,7 @@ final class FileWatcher {
     var fileWatch: FileWatch!
 
     init(target url: URL, action: @escaping () -> Void) {
-        self.url = Repository(url: url)?.headURL ?? url
+        self.url = url
         self.action = action
         fileWatch = try! FileWatch(
             paths: [self.url.path],

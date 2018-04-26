@@ -15,7 +15,15 @@ struct Repository {
     }
 
     var headURL: URL {
+        return Repository.gitHeadURL(fromRoot: url)
+    }
+
+    private static func gitHeadURL(fromRoot url: URL) -> URL {
         return url.appendingPathComponent(".git").appendingPathComponent("HEAD")
+    }
+
+    static func gitHeadURL(from url: URL) -> URL? {
+        return gitRootURL(from: url).map(Repository.gitHeadURL(fromRoot:))
     }
 
     static func gitRootURL(from url: URL) -> URL? {

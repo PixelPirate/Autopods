@@ -6,7 +6,8 @@ final class CoordinatorService {
     var progressCoordinator: ProgressCoordinator? = nil
 
     func coordinate(added podfile: Podfile) {
-        Services.fileWatch.start(watching: podfile.url) { [unowned self] in
+        let url = Repository.gitHeadURL(from: podfile.url) ?? podfile.url
+        Services.fileWatch.start(watching: url) { [unowned self] in
             self.coordinate(updated: podfile)
         }
     }
