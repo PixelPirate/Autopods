@@ -30,4 +30,24 @@ final class CocoapodsService {
 
         return ProcessProgress(process: process)
     }
+
+    func isInSync(_ podfile: Podfile) -> Bool {
+        func contents(of url: URL) -> [String: String] {
+            var checksums: [String: String] = [:]
+            let file = try! String(contentsOf: url)
+            let regex = try! NSRegularExpression(pattern: "(?<id>\\w+): (?<checksum>\\w+)\\n")
+            let matches = regex.matches(in: file, range: NSRange.init(file.startIndex..., in: file))
+            for match in matches {
+                let id = String(file[Range(match.range(withName: "id"), in: file)!])
+                let checksum = String(file[Range(match.range(withName: "checksum"), in: file)!])
+                checksums[id] = checksum
+            }
+            return checksums
+        }
+
+        let lockfile = contents(of: podfile.lockFileURL)
+        let manifest = contents(of: podfile.manifestURL)
+
+        return lockfile == manifest
+    }
 }

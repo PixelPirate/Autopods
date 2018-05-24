@@ -8,6 +8,9 @@ final class CoordinatorService {
     func coordinate(added podfile: Podfile) {
         let url = Repository.gitHeadURL(from: podfile.url) ?? podfile.url
         Services.fileWatch.start(watching: url) { [unowned self] in
+            guard !Services.cocoapods.isInSync(podfile) else {
+                return
+            }
             self.coordinate(updated: podfile)
         }
     }

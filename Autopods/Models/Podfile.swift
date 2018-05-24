@@ -17,3 +17,17 @@ extension Podfile: Hashable {
         return url.hashValue
     }
 }
+
+extension Podfile {
+
+    var lockFileURL: URL {
+        return url.appendingPathExtension("lock")
+    }
+
+    var manifestURL: URL {
+        return url
+            .deletingLastPathComponent()
+            .appendingPathComponent("Pods", isDirectory: true)
+            .appendingPathComponent("Manifest.lock", isDirectory: false)
+    }
+}
