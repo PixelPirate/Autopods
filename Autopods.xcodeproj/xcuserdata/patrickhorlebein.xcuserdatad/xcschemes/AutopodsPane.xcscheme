@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "850529CD1F17B764000E34E2"
-               BuildableName = "CocoapodsPane.prefPane"
-               BlueprintName = "CocoapodsPane"
-               ReferencedContainer = "container:Cocoapods.xcodeproj">
+               BuildableName = "AutopodsPane.prefPane"
+               BlueprintName = "AutopodsPane"
+               ReferencedContainer = "container:Autopods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "851CD1131F15103A00524C2A"
                BuildableName = "Autopods.app"
                BlueprintName = "Autopods"
-               ReferencedContainer = "container:Cocoapods.xcodeproj">
+               ReferencedContainer = "container:Autopods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,7 +40,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -48,9 +47,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "850529CD1F17B764000E34E2"
-            BuildableName = "CocoapodsPane.prefPane"
-            BlueprintName = "CocoapodsPane"
-            ReferencedContainer = "container:Cocoapods.xcodeproj">
+            BuildableName = "AutopodsPane.prefPane"
+            BlueprintName = "AutopodsPane"
+            ReferencedContainer = "container:Autopods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,7 +59,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -78,9 +76,9 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "850529CD1F17B764000E34E2"
-                     BuildableName = "CocoapodsPane.prefPane"
-                     BlueprintName = "CocoapodsPane"
-                     ReferencedContainer = "container:Cocoapods.xcodeproj">
+                     BuildableName = "AutopodsPane.prefPane"
+                     BlueprintName = "AutopodsPane"
+                     ReferencedContainer = "container:Autopods.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -90,9 +88,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "850529CD1F17B764000E34E2"
-            BuildableName = "CocoapodsPane.prefPane"
-            BlueprintName = "CocoapodsPane"
-            ReferencedContainer = "container:Cocoapods.xcodeproj">
+            BuildableName = "AutopodsPane.prefPane"
+            BlueprintName = "AutopodsPane"
+            ReferencedContainer = "container:Autopods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <EnvironmentVariables>
@@ -115,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "850529CD1F17B764000E34E2"
-            BuildableName = "CocoapodsPane.prefPane"
-            BlueprintName = "CocoapodsPane"
-            ReferencedContainer = "container:Cocoapods.xcodeproj">
+            BuildableName = "AutopodsPane.prefPane"
+            BlueprintName = "AutopodsPane"
+            ReferencedContainer = "container:Autopods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

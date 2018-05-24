@@ -28,8 +28,8 @@ class PodfilesPreferencesController: NSObject {
 //        }
 
         if sender.state == .on {
-            let bundle = CocoapodsPane.shared().bundle
-            guard let url = bundle.url(forResource: "Cocoapods", withExtension: "app") else {
+            let bundle = AutopodsPane.shared().bundle
+            guard let url = bundle.url(forResource: "Autopods", withExtension: "app") else {
                 return
             }
             try! NSWorkspace.shared.launchApplication(at: url, options: .andHide, configuration: [:])

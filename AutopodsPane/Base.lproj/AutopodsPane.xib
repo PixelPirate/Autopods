@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13156.6"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -29,7 +29,7 @@
                             <rect key="frame" x="1" y="1" width="391" height="366"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <collectionView id="OkV-zb-jqf" customClass="FilesCollectionView" customModule="CocoapodsPane" customModuleProvider="target">
+                                <collectionView id="OkV-zb-jqf" customClass="FilesCollectionView" customModule="AutopodsPane" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="391" height="158"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="bXp-bE-Itv">
@@ -57,7 +57,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="275" id="NTz-GD-e6M"/>
                         </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Cocoapods" id="JCD-Jr-pPn">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Autopods" id="JCD-Jr-pPn">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -86,7 +86,7 @@
                 </constraints>
             </view>
         </window>
-        <customObject id="qX7-Q4-CRy" customClass="PodfilesPreferencesController" customModule="CocoapodsPane" customModuleProvider="target">
+        <customObject id="qX7-Q4-CRy" customClass="PodfilesPreferencesController" customModule="AutopodsPane" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="OkV-zb-jqf" id="GW8-Vc-mLw"/>
                 <outlet property="enableUpdatesSwitch" destination="9TM-Hd-N0h" id="sql-Ma-kqh"/>

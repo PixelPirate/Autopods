@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		850529D11F17B764000E34E2 /* CocoapodsPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 850529D01F17B764000E34E2 /* CocoapodsPane.h */; };
-		850529D31F17B764000E34E2 /* CocoapodsPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 850529D21F17B764000E34E2 /* CocoapodsPane.m */; };
-		850529D51F17B764000E34E2 /* CocoapodsPane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 850529D41F17B764000E34E2 /* CocoapodsPane.tiff */; };
-		850529D81F17B764000E34E2 /* CocoapodsPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850529D61F17B764000E34E2 /* CocoapodsPane.xib */; };
+		850529D11F17B764000E34E2 /* AutopodsPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 850529D01F17B764000E34E2 /* AutopodsPane.h */; };
+		850529D31F17B764000E34E2 /* AutopodsPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 850529D21F17B764000E34E2 /* AutopodsPane.m */; };
+		850529D51F17B764000E34E2 /* AutopodsPane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 850529D41F17B764000E34E2 /* AutopodsPane.tiff */; };
+		850529D81F17B764000E34E2 /* AutopodsPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850529D61F17B764000E34E2 /* AutopodsPane.xib */; };
 		850529E01F17B7D8000E34E2 /* Serivces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC71F167500001B8083 /* Serivces.swift */; };
 		850529E11F17B7D8000E34E2 /* PodfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851CD1191F15103A00524C2A /* PodfilesViewController.swift */; };
 		850529E21F17B7D8000E34E2 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AD71F175A2D001B8083 /* ProgressViewController.swift */; };
@@ -70,13 +70,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		850529CE1F17B764000E34E2 /* CocoapodsPane.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoapodsPane.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
-		850529D01F17B764000E34E2 /* CocoapodsPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoapodsPane.h; sourceTree = "<group>"; };
-		850529D21F17B764000E34E2 /* CocoapodsPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoapodsPane.m; sourceTree = "<group>"; };
-		850529D41F17B764000E34E2 /* CocoapodsPane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CocoapodsPane.tiff; sourceTree = "<group>"; };
-		850529D71F17B764000E34E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CocoapodsPane.xib; sourceTree = "<group>"; };
+		850529CE1F17B764000E34E2 /* AutopodsPane.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutopodsPane.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		850529D01F17B764000E34E2 /* AutopodsPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutopodsPane.h; sourceTree = "<group>"; };
+		850529D21F17B764000E34E2 /* AutopodsPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutopodsPane.m; sourceTree = "<group>"; };
+		850529D41F17B764000E34E2 /* AutopodsPane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AutopodsPane.tiff; sourceTree = "<group>"; };
+		850529D71F17B764000E34E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AutopodsPane.xib; sourceTree = "<group>"; };
 		850529D91F17B764000E34E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		850529DD1F17B784000E34E2 /* CocoapodsPane-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoapodsPane-Bridging-Header.h"; sourceTree = "<group>"; };
+		850529DD1F17B784000E34E2 /* AutopodsPane-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutopodsPane-Bridging-Header.h"; sourceTree = "<group>"; };
 		850529F51F17BAC7000E34E2 /* PodfilesPreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodfilesPreferencesController.swift; sourceTree = "<group>"; };
 		850529F81F17BC54000E34E2 /* Progress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
 		8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Names.swift"; sourceTree = "<group>"; };
@@ -132,18 +132,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		850529CF1F17B764000E34E2 /* CocoapodsPane */ = {
+		850529CF1F17B764000E34E2 /* AutopodsPane */ = {
 			isa = PBXGroup;
 			children = (
-				850529D01F17B764000E34E2 /* CocoapodsPane.h */,
-				850529D21F17B764000E34E2 /* CocoapodsPane.m */,
-				850529D41F17B764000E34E2 /* CocoapodsPane.tiff */,
-				850529D61F17B764000E34E2 /* CocoapodsPane.xib */,
+				850529D01F17B764000E34E2 /* AutopodsPane.h */,
+				850529D21F17B764000E34E2 /* AutopodsPane.m */,
+				850529D41F17B764000E34E2 /* AutopodsPane.tiff */,
+				850529D61F17B764000E34E2 /* AutopodsPane.xib */,
 				850529D91F17B764000E34E2 /* Info.plist */,
-				850529DD1F17B784000E34E2 /* CocoapodsPane-Bridging-Header.h */,
+				850529DD1F17B784000E34E2 /* AutopodsPane-Bridging-Header.h */,
 				850529F51F17BAC7000E34E2 /* PodfilesPreferencesController.swift */,
 			);
-			path = CocoapodsPane;
+			path = AutopodsPane;
 			sourceTree = "<group>";
 		};
 		8505EC10204ECFA9001BE4A8 /* Scripts */ = {
@@ -157,8 +157,8 @@
 		851CD10B1F15103A00524C2A = {
 			isa = PBXGroup;
 			children = (
-				851CD1161F15103A00524C2A /* Cocoapods */,
-				850529CF1F17B764000E34E2 /* CocoapodsPane */,
+				851CD1161F15103A00524C2A /* Autopods */,
+				850529CF1F17B764000E34E2 /* AutopodsPane */,
 				851CD1151F15103A00524C2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,12 +167,12 @@
 			isa = PBXGroup;
 			children = (
 				851CD1141F15103A00524C2A /* Autopods.app */,
-				850529CE1F17B764000E34E2 /* CocoapodsPane.prefPane */,
+				850529CE1F17B764000E34E2 /* AutopodsPane.prefPane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		851CD1161F15103A00524C2A /* Cocoapods */ = {
+		851CD1161F15103A00524C2A /* Autopods */ = {
 			isa = PBXGroup;
 			children = (
 				8505EC10204ECFA9001BE4A8 /* Scripts */,
@@ -190,7 +190,7 @@
 				850529F81F17BC54000E34E2 /* Progress.storyboard */,
 				851CD1201F15103A00524C2A /* Info.plist */,
 			);
-			path = Cocoapods;
+			path = Autopods;
 			sourceTree = "<group>";
 		};
 		85773ACF1F175518001B8083 /* Services */ = {
@@ -275,16 +275,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				850529D11F17B764000E34E2 /* CocoapodsPane.h in Headers */,
+				850529D11F17B764000E34E2 /* AutopodsPane.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		850529CD1F17B764000E34E2 /* CocoapodsPane */ = {
+		850529CD1F17B764000E34E2 /* AutopodsPane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 850529DC1F17B764000E34E2 /* Build configuration list for PBXNativeTarget "CocoapodsPane" */;
+			buildConfigurationList = 850529DC1F17B764000E34E2 /* Build configuration list for PBXNativeTarget "AutopodsPane" */;
 			buildPhases = (
 				850529C91F17B764000E34E2 /* Sources */,
 				850529CA1F17B764000E34E2 /* Frameworks */,
@@ -295,9 +295,9 @@
 			);
 			dependencies = (
 			);
-			name = CocoapodsPane;
+			name = AutopodsPane;
 			productName = CocoapodsPane;
-			productReference = 850529CE1F17B764000E34E2 /* CocoapodsPane.prefPane */;
+			productReference = 850529CE1F17B764000E34E2 /* AutopodsPane.prefPane */;
 			productType = "com.apple.product-type.bundle";
 		};
 		851CD1131F15103A00524C2A /* Autopods */ = {
@@ -339,7 +339,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 851CD10F1F15103A00524C2A /* Build configuration list for PBXProject "Cocoapods" */;
+			buildConfigurationList = 851CD10F1F15103A00524C2A /* Build configuration list for PBXProject "Autopods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -353,7 +353,7 @@
 			projectRoot = "";
 			targets = (
 				851CD1131F15103A00524C2A /* Autopods */,
-				850529CD1F17B764000E34E2 /* CocoapodsPane */,
+				850529CD1F17B764000E34E2 /* AutopodsPane */,
 			);
 		};
 /* End PBXProject section */
@@ -365,8 +365,8 @@
 			files = (
 				8520B5851F17C92E009D6910 /* Autopods.app in Resources */,
 				850529F11F17B7D8000E34E2 /* CocoapodViewItem.xib in Resources */,
-				850529D51F17B764000E34E2 /* CocoapodsPane.tiff in Resources */,
-				850529D81F17B764000E34E2 /* CocoapodsPane.xib in Resources */,
+				850529D51F17B764000E34E2 /* AutopodsPane.tiff in Resources */,
+				850529D81F17B764000E34E2 /* AutopodsPane.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +394,7 @@
 				850529E21F17B7D8000E34E2 /* ProgressViewController.swift in Sources */,
 				8520B5881F17D0AF009D6910 /* ConfigurationService.swift in Sources */,
 				850529E11F17B7D8000E34E2 /* PodfilesViewController.swift in Sources */,
-				850529D31F17B764000E34E2 /* CocoapodsPane.m in Sources */,
+				850529D31F17B764000E34E2 /* AutopodsPane.m in Sources */,
 				850529ED1F17B7D8000E34E2 /* ListLayout.swift in Sources */,
 				850529EE1F17B7D8000E34E2 /* FileWatcher.swift in Sources */,
 				850529E41F17B7D8000E34E2 /* FileWatchService.swift in Sources */,
@@ -452,12 +452,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		850529D61F17B764000E34E2 /* CocoapodsPane.xib */ = {
+		850529D61F17B764000E34E2 /* AutopodsPane.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				850529D71F17B764000E34E2 /* Base */,
 			);
-			name = CocoapodsPane.xib;
+			name = AutopodsPane.xib;
 			sourceTree = "<group>";
 		};
 		851CD11D1F15103A00524C2A /* Main.storyboard */ = {
@@ -488,12 +488,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3DZ38T823P;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CocoapodsPane/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AutopodsPane/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.piay.CocoapodsPane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CocoapodsPane/CocoapodsPane-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutopodsPane/AutopodsPane-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = prefPane;
@@ -517,12 +517,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3DZ38T823P;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CocoapodsPane/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AutopodsPane/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.piay.CocoapodsPane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CocoapodsPane/CocoapodsPane-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutopodsPane/AutopodsPane-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = prefPane;
 			};
@@ -628,7 +628,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3DZ38T823P;
-				INFOPLIST_FILE = Cocoapods/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Autopods/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.piay.Cocoapods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -641,7 +641,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3DZ38T823P;
-				INFOPLIST_FILE = Cocoapods/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Autopods/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.piay.Cocoapods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -651,7 +651,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		850529DC1F17B764000E34E2 /* Build configuration list for PBXNativeTarget "CocoapodsPane" */ = {
+		850529DC1F17B764000E34E2 /* Build configuration list for PBXNativeTarget "AutopodsPane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				850529DA1F17B764000E34E2 /* Debug */,
@@ -660,7 +660,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		851CD10F1F15103A00524C2A /* Build configuration list for PBXProject "Cocoapods" */ = {
+		851CD10F1F15103A00524C2A /* Build configuration list for PBXProject "Autopods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				851CD1211F15103A00524C2A /* Debug */,

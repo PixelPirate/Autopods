@@ -1,6 +1,6 @@
 //
-//  CocoapodsPane.h
-//  CocoapodsPane
+//  AutopodsPane.h
+//  AutopodsPane
 //
 //  Created by Patrick Horlebein on 13.07.17.
 //  Copyright © 2017 piay. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <PreferencePanes/PreferencePanes.h>
 
-@interface CocoapodsPane : NSPreferencePane
+@interface AutopodsPane : NSPreferencePane
 
-+ (CocoapodsPane *)shared;
++ (AutopodsPane *)shared;
 - (void)mainViewDidLoad;
 
 @end
 
-static CocoapodsPane* _shared = nil;
+static AutopodsPane* _shared = nil;

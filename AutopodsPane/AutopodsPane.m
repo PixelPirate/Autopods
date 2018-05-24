@@ -1,21 +1,21 @@
 //
-//  CocoapodsPane.m
-//  CocoapodsPane
+//  AutopodsPane.m
+//  AutopodsPane
 //
 //  Created by Patrick Horlebein on 13.07.17.
 //  Copyright © 2017 piay. All rights reserved.
 //
 
-#import "CocoapodsPane.h"
+#import "AutopodsPane.h"
 
-@implementation CocoapodsPane
+@implementation AutopodsPane
 
 - (void)mainViewDidLoad
 {
     _shared = self;
 }
 
-+ (CocoapodsPane *)shared
++ (AutopodsPane *)shared
 {
     return _shared;
 }
