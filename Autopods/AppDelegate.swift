@@ -11,7 +11,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
         if !flag {
-            for window in sender.windows {
+            for window in sender.windows where window.identifier?.rawValue == "Pods" {
                 window.makeKeyAndOrderFront(self)
             }
         }
