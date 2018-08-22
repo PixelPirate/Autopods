@@ -54,7 +54,10 @@ final class ProcessProgress: Progress {
             progress.timer?.invalidate()
 
             guard progress.process.terminationStatus == 0 else {
-                progress.status = .error(Error.processFailed(path: progress.process.currentDirectoryPath, error: progress.process.error))
+                progress.status = .error(Error.processFailed(
+                    path: progress.process.currentDirectoryPath,
+                    error: progress.process.error)
+                )
                 return
             }
 

@@ -31,10 +31,8 @@ final class ProgressCoordinator {
                         title: "Es ist ein Fehler aufgetreten",
                         message: "\(path)\n\(error)",
                         actions: [
-                            "Schließen": {
-                                controller.animate(toValue: 1, completion: {
-                                    coordinator.ended?()
-                                })
+                            "Schließen": { [weak coordinator] in
+                                coordinator?.ended?()
                             },
                             "Terminal": {
                                 guard let url = Bundle.main.url(forResource: "OpenTerminal", withExtension: "applescript"), let template = try? String(contentsOf: url) else {
