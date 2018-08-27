@@ -17,7 +17,7 @@ final class CocoapodsService {
 
         let dir = podfile.url.deletingLastPathComponent()
 
-        let process = LoggingProcess()
+        let process = CocoapodsProcess()
         process.launchPath = "/usr/local/bin/pod"
         process.arguments = [argument]
         process.currentDirectoryPath = dir.path
