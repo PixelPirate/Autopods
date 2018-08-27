@@ -54,9 +54,10 @@ final class ProcessProgress: Progress {
             progress.timer?.invalidate()
 
             guard progress.process.terminationStatus == 0 else {
+                print("Progress ended with termination status", progress.process.terminationStatus)
                 progress.status = .error(Error.processFailed(
                     path: progress.process.currentDirectoryPath,
-                    error: progress.process.error)
+                    error: progress.process.completeOutput)
                 )
                 return
             }

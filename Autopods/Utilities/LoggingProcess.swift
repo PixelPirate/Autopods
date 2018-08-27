@@ -5,6 +5,9 @@ final class LoggingProcess {
     let process = Process()
     private(set) var output = ""
     private(set) var error = ""
+    /// Combined output of standardOutput and standardError.
+    private(set) var completeOutput = ""
+    let queue = DispatchQueue(label: "")
 
     init() {
         let outputPipe = Pipe()
@@ -17,6 +20,9 @@ final class LoggingProcess {
             FileHandle.standardOutput.write(data)
             if let string = String(data: data, encoding: .utf8) {
                 self?.output.append(string)
+                self?.queue.async {
+                    self?.completeOutput.append(string)
+                }
             }
         }
 
@@ -25,6 +31,9 @@ final class LoggingProcess {
             FileHandle.standardError.write(data)
             if let string = String(data: data, encoding: .utf8) {
                 self?.error.append(string)
+                self?.queue.async {
+                    self?.completeOutput.append(string)
+                }
             }
         }
 
