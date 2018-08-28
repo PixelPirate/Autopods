@@ -49,6 +49,7 @@ final class ProcessProgress: Progress {
                 return
             }
 
+            // TODO: Check progress state, recieve retry state and forward this state.
             progress.process.waitUntilExit()
 
             progress.timer?.invalidate()
