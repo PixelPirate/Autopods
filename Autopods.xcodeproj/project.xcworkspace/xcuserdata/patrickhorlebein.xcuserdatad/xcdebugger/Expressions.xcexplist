@@ -20,10 +20,10 @@
                value = "FileManager.default.fileExists(atPath: url.path)">
             </PersistentString>
             <PersistentString
-               value = "url.absoluteString">
+               value = "url.path">
             </PersistentString>
             <PersistentString
-               value = "url.path">
+               value = "url.absoluteString">
             </PersistentString>
             <PersistentString
                value = "FileManager.default.fileExists(atPath: url.absoluteString)">
@@ -35,6 +35,20 @@
          <PersistentStrings>
             <PersistentString
                value = "self.url.path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TransparentWindowController.windowDidLoad():TransparentWindow.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSScreen.main.visibleFrame">
+            </PersistentString>
+            <PersistentString
+               value = "window.frame">
+            </PersistentString>
+            <PersistentString
+               value = "NSScreen.screens()[0].visibleFrame">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

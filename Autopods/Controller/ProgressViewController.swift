@@ -52,13 +52,7 @@ final class ProgressViewController: NSViewController {
 
         view = errorView
 
-        if let screen = NSScreen.main {
-            let visibleFrame = screen.visibleFrame
-            let windowSize = view.window!.frame.size
-            let origin = NSPoint(x: visibleFrame.origin.x + visibleFrame.size.width - windowSize.width - 20,
-                                 y: visibleFrame.origin.y + visibleFrame.size.height - windowSize.height - 20)
-            view.window!.setFrameOrigin(origin)
-        }
+        view.window?.moveTopLeft(on: NSScreen.screens[0])
 
         view.window?.backgroundColor = #colorLiteral(red: 0.832826674, green: 0.261818707, blue: 0.2293474078, alpha: 1)
     }

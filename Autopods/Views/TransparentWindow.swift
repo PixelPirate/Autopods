@@ -26,7 +26,6 @@ class TransparentWindowController: NSWindowController {
         window.titleVisibility = .hidden
         window.showsToolbarButton = false
         window.isMovable = false
-        window.standardWindowButton(NSWindow.ButtonType.fullScreenButton)?.isHidden = true
         window.standardWindowButton(NSWindow.ButtonType.miniaturizeButton)?.isHidden = true
         window.standardWindowButton(NSWindow.ButtonType.zoomButton)?.isHidden = true
         window.level = .floating
@@ -35,14 +34,9 @@ class TransparentWindowController: NSWindowController {
         window.contentView?.wantsLayer = true
         window.invalidateShadow()
 
-        //.screens()[0] is the screen with the menu bar.
-        if let screen = NSScreen.main {
-            let visibleFrame = screen.visibleFrame
-            let windowSize = window.frame.size
-            let origin = NSPoint(x: visibleFrame.origin.x + visibleFrame.size.width - windowSize.width - 20,
-                                 y: visibleFrame.origin.y + visibleFrame.size.height - windowSize.height - 20)
-            window.setFrameOrigin(origin)
-        }
+        // Changes frame to move window to screen with status bar.
         window.makeKeyAndOrderFront(self)
+        
+        window.moveTopLeft(on: NSScreen.screens[0])
     }
 }

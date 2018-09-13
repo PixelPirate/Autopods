@@ -46,6 +46,7 @@
 		851CD11A1F15103A00524C2A /* PodfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851CD1191F15103A00524C2A /* PodfilesViewController.swift */; };
 		851CD11C1F15103A00524C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851CD11B1F15103A00524C2A /* Assets.xcassets */; };
 		851CD11F1F15103A00524C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851CD11D1F15103A00524C2A /* Main.storyboard */; };
+		852081B1214AA2F300D2521E /* NSWindow+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852081B0214AA2F300D2521E /* NSWindow+Position.swift */; };
 		8520B5851F17C92E009D6910 /* Autopods.app in Resources */ = {isa = PBXBuildFile; fileRef = 851CD1141F15103A00524C2A /* Autopods.app */; };
 		8520B5871F17CF25009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
 		8520B5881F17D0AF009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
@@ -94,6 +95,7 @@
 		851CD11B1F15103A00524C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		851CD11E1F15103A00524C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		851CD1201F15103A00524C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		852081B0214AA2F300D2521E /* NSWindow+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Position.swift"; sourceTree = "<group>"; };
 		8520B5861F17CF25009D6910 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
 		85768AF41FCF1329008A1A96 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		85773AC31F1672AA001B8083 /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				85773ADD1F17A832001B8083 /* ClosedRange+At.swift */,
 				8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */,
 				8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */,
+				852081B0214AA2F300D2521E /* NSWindow+Position.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				85773AC81F167500001B8083 /* Serivces.swift in Sources */,
 				85773ACE1F167B06001B8083 /* FileWatch.swift in Sources */,
 				85773ADE1F17A832001B8083 /* ClosedRange+At.swift in Sources */,
+				852081B1214AA2F300D2521E /* NSWindow+Position.swift in Sources */,
 				85B8BEC31F1525C600B1B4EE /* PodfilesService.swift in Sources */,
 				851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */,
 				8505EC0F204E898B001BE4A8 /* LoggingProcess.swift in Sources */,
