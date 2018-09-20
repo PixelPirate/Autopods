@@ -3,6 +3,8 @@ import Foundation
 final class CocoapodsProcess: LoggingProcess {
     private var retryProcess: CocoapodsProcess?
 
+    private static let suggestionLine = try! NSRegularExpression(pattern: "You should run `pod update ([\\w\\s]*)`")
+
     override func launch() {
         guard isValidLaunchPath else {
             fatalError("Invalid launch path: The path does not end with \"pod\".")
@@ -24,9 +26,8 @@ final class CocoapodsProcess: LoggingProcess {
     }
 
     private func updateSuggestion() -> [String] {
-        let regex = try! NSRegularExpression(pattern: "You should run `pod update ([\\w\\s]*)`")
         guard
-            let match = regex.firstMatch(
+            let match = CocoapodsProcess.suggestionLine.firstMatch(
                 in: completeOutput,
                 range: NSRange(location: 0, length: completeOutput.utf16.count)
             )

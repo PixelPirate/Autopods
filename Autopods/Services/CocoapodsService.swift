@@ -2,7 +2,13 @@ import Foundation
 
 final class CocoapodsService {
 
+    enum Error: Swift.Error {
+        case noPodfile
+    }
+
     var processes: [LoggingProcess] = []
+
+    private static let podfileLine = try! NSRegularExpression(pattern: "(?<id>\\w+): (?<checksum>\\w+)\\n")
 
     func update(_ podfile: Podfile) -> Progress {
         return process(for: podfile, withArgument: "update")
@@ -31,12 +37,13 @@ final class CocoapodsService {
         return ProcessProgress(process: process)
     }
 
-    func isInSync(_ podfile: Podfile) -> Bool {
-        func contents(of url: URL) -> [String: String] {
+    func isInSync(_ podfile: Podfile) throws -> Bool {
+        func contents(of url: URL) throws -> [String: String] {
             var checksums: [String: String] = [:]
-            let file = try! String(contentsOf: url)
-            let regex = try! NSRegularExpression(pattern: "(?<id>\\w+): (?<checksum>\\w+)\\n")
-            let matches = regex.matches(in: file, range: NSRange.init(file.startIndex..., in: file))
+            guard let file = try? String(contentsOf: url) else {
+                throw Error.noPodfile
+            }
+            let matches = CocoapodsService.podfileLine.matches(in: file, range: NSRange.init(file.startIndex..., in: file))
             for match in matches {
                 let id = String(file[Range(match.range(withName: "id"), in: file)!])
                 let checksum = String(file[Range(match.range(withName: "checksum"), in: file)!])
@@ -45,8 +52,8 @@ final class CocoapodsService {
             return checksums
         }
 
-        let lockfile = contents(of: podfile.lockFileURL)
-        let manifest = contents(of: podfile.manifestURL)
+        let lockfile = try contents(of: podfile.lockFileURL)
+        let manifest = try contents(of: podfile.manifestURL)
 
         return lockfile == manifest
     }
