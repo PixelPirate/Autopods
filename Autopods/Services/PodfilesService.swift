@@ -10,13 +10,13 @@ final class PodfilesService {
         }
     }
 
-    var podfiles: Set<Podfile> {
+    var podfiles: OrderedSet<Podfile> {
         get {
             guard let data = UserDefaults.standard.array(forKey: "podfiles") as? [Data] else { return [] }
             let items = try! data.map {
                 try PropertyListDecoder().decode(Podfile.self, from: $0)
             }
-            return Set(items)
+            return OrderedSet(items)
         }
         set {
             let dataArray = try! newValue.map(PropertyListEncoder().encode)

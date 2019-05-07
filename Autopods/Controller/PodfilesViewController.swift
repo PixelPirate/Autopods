@@ -17,15 +17,14 @@ class PodfilesViewController: NSViewController {
     }
 
     @IBAction func delete(_ sender: AnyObject) {
-        let indexe = collectionView.selectionIndexes
-        let index = indexe.index(after: indexe.startIndex)
-        let indexPath = IndexPath(item: indexe.first!, section: indexe[index])
-
         let pods = Services.podfiles.podfiles
-        let podIndex = pods.index(pods.startIndex, offsetBy: indexPath.item)
-        let pod = pods[podIndex]
+        let selectedPods = collectionView.selectionIndexes.map {
+            return pods[$0]
+        }
 
-        Services.podfiles.remove(pod)
+        for pod in selectedPods {
+            Services.podfiles.remove(pod)
+        }
     }
 }
 

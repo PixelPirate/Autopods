@@ -698,7 +698,7 @@ CA
                                     <rect key="frame" x="1" y="1" width="478" height="220"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView selectable="YES" id="oTI-BB-m0F" customClass="FilesCollectionView" customModule="Autopods" customModuleProvider="target">
+                                        <collectionView selectable="YES" allowsMultipleSelection="YES" id="oTI-BB-m0F" customClass="FilesCollectionView" customModule="Autopods" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="478" height="220"/>
                                             <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" scrollDirection="horizontal" id="ibM-xE-E7E">

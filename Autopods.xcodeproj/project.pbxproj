@@ -50,6 +50,7 @@
 		8520B5851F17C92E009D6910 /* Autopods.app in Resources */ = {isa = PBXBuildFile; fileRef = 851CD1141F15103A00524C2A /* Autopods.app */; };
 		8520B5871F17CF25009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
 		8520B5881F17D0AF009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
+		854DC46E22816A320070B655 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DC46D22816A320070B655 /* OrderedSet.swift */; };
 		85768AF51FCF1329008A1A96 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85768AF41FCF1329008A1A96 /* Progress.swift */; };
 		85773AC41F1672AA001B8083 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC31F1672AA001B8083 /* FileWatcher.swift */; };
 		85773AC61F16745C001B8083 /* FileWatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC51F16745C001B8083 /* FileWatchService.swift */; };
@@ -97,6 +98,7 @@
 		851CD1201F15103A00524C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		852081B0214AA2F300D2521E /* NSWindow+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Position.swift"; sourceTree = "<group>"; };
 		8520B5861F17CF25009D6910 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
+		854DC46D22816A320070B655 /* OrderedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
 		85768AF41FCF1329008A1A96 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		85773AC31F1672AA001B8083 /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
 		85773AC51F16745C001B8083 /* FileWatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatchService.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				8585D3AB21345B1200495190 /* CocoapodsProcess.swift */,
 				8505EC14204EF1D0001BE4A8 /* Repository.swift */,
 				8505EC16204EF3FB001BE4A8 /* BlockMenuItem.swift */,
+				854DC46D22816A320070B655 /* OrderedSet.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -449,6 +453,7 @@
 				85773ADE1F17A832001B8083 /* ClosedRange+At.swift in Sources */,
 				852081B1214AA2F300D2521E /* NSWindow+Position.swift in Sources */,
 				85B8BEC31F1525C600B1B4EE /* PodfilesService.swift in Sources */,
+				854DC46E22816A320070B655 /* OrderedSet.swift in Sources */,
 				851553211F17B3C4006389C6 /* ProgressCoordinator.swift in Sources */,
 				8505EC0F204E898B001BE4A8 /* LoggingProcess.swift in Sources */,
 				8505E9FC1FCEB5700066D14B /* Storyboard+Names.swift in Sources */,
