@@ -35,13 +35,7 @@ final class ProgressCoordinator {
                                 coordinator?.ended?()
                             },
                             "Terminal": {
-                                guard let url = Bundle.main.url(forResource: "OpenTerminal", withExtension: "applescript"), let template = try? String(contentsOf: url) else {
-                                    return
-                                }
-
-                                let source = template.replacingOccurrences(of: "PATH", with: path)
-                                let script = NSAppleScript(source: source)
-                                script?.executeAndReturnError(nil)
+                                Services.userInterfaceService.openTerminal(onPath: path)
                             }
                         ]
                     )

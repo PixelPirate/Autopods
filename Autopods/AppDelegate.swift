@@ -35,7 +35,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             submenu.addItem(BlockMenuItem(title: "Update") {
                 Services.coordinator.coordinate(updated: podfile, launch: Services.cocoapods.update)
             })
-
+            submenu.addItem(NSMenuItem.separator())
+            submenu.addItem(BlockMenuItem(title: "Terminal") {
+                let path = podfile.url.deletingLastPathComponent().path
+                Services.userInterfaceService.openTerminal(onPath: path)
+            })
             menu.addItem(item)
         }
 
