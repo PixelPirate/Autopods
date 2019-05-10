@@ -84,7 +84,7 @@
 		850529F81F17BC54000E34E2 /* Progress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
 		8505E9FB1FCEB5700066D14B /* Storyboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Names.swift"; sourceTree = "<group>"; };
 		8505EC0E204E898B001BE4A8 /* LoggingProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingProcess.swift; sourceTree = "<group>"; };
-		8505EC12204ED2C2001BE4A8 /* OpenTerminal.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = OpenTerminal.applescript; sourceTree = "<group>"; };
+		8505EC12204ED2C2001BE4A8 /* OpenTerminal.applescript */ = {isa = PBXFileReference; explicitFileType = text; path = OpenTerminal.applescript; sourceTree = "<group>"; };
 		8505EC14204EF1D0001BE4A8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		8505EC16204EF3FB001BE4A8 /* BlockMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockMenuItem.swift; sourceTree = "<group>"; };
 		8515531E1F17AD10006389C6 /* NSWindow+Fade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Fade.swift"; sourceTree = "<group>"; };
