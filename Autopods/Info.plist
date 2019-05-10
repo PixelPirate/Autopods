@@ -30,5 +30,7 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Autopods uses AppleScript to allow you to open a new Terminal window in the directory of a pod.</string>
 </dict>
 </plist>
