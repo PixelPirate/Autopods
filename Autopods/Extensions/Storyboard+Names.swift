@@ -9,4 +9,5 @@ extension NSStoryboard {
 extension NSStoryboard.SceneIdentifier {
 
     static let progress = NSStoryboard.SceneIdentifier("progress")
+    static let `import` = NSStoryboard.SceneIdentifier("import")
 }

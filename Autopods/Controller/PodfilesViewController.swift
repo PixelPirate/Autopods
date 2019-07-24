@@ -2,11 +2,12 @@ import Cocoa
 
 class PodfilesViewController: NSViewController {
 
-    @IBOutlet weak var collectionView: NSCollectionView!
+    @IBOutlet weak var collectionView: FilesCollectionView!
     @IBOutlet weak var statusTextField: NSTextField!
 
     override func viewDidLoad() {
         collectionView.collectionViewLayout = ListLayout()
+        collectionView.filesDelegate = self
         updateStatusText()
 
         NotificationCenter.default.addObserver(forName: PodfilesService.PodfilesUpdated,
@@ -25,6 +26,16 @@ class PodfilesViewController: NSViewController {
         for pod in selectedPods {
             Services.podfiles.remove(pod)
         }
+    }
+}
+
+extension PodfilesViewController: FilesCollectionViewDelegate {
+
+    func filesCollectionView(_ collectionView: FilesCollectionView, performImportFrom url: URL) {
+        let importViewController = NSStoryboard(name: NSStoryboard.main, bundle: nil)
+            .instantiateController(withIdentifier: NSStoryboard.SceneIdentifier.import) as! ImportViewController
+        presentViewControllerAsSheet(importViewController)
+        importViewController.beginImport(url)
     }
 }
 

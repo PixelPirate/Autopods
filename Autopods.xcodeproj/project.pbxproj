@@ -51,6 +51,8 @@
 		8520B5871F17CF25009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
 		8520B5881F17D0AF009D6910 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520B5861F17CF25009D6910 /* ConfigurationService.swift */; };
 		854DC46E22816A320070B655 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DC46D22816A320070B655 /* OrderedSet.swift */; };
+		8570CCBE2289C09B00F21FCB /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8570CCBD2289C09B00F21FCB /* ImportViewController.swift */; };
+		8570CCC2228ABE0F00F21FCB /* ImportTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8570CCC1228ABE0F00F21FCB /* ImportTask.swift */; };
 		85768AF51FCF1329008A1A96 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85768AF41FCF1329008A1A96 /* Progress.swift */; };
 		85773AC41F1672AA001B8083 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC31F1672AA001B8083 /* FileWatcher.swift */; };
 		85773AC61F16745C001B8083 /* FileWatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85773AC51F16745C001B8083 /* FileWatchService.swift */; };
@@ -99,6 +101,8 @@
 		852081B0214AA2F300D2521E /* NSWindow+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Position.swift"; sourceTree = "<group>"; };
 		8520B5861F17CF25009D6910 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
 		854DC46D22816A320070B655 /* OrderedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
+		8570CCBD2289C09B00F21FCB /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
+		8570CCC1228ABE0F00F21FCB /* ImportTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportTask.swift; sourceTree = "<group>"; };
 		85768AF41FCF1329008A1A96 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		85773AC31F1672AA001B8083 /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
 		85773AC51F16745C001B8083 /* FileWatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatchService.swift; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 			children = (
 				851CD1191F15103A00524C2A /* PodfilesViewController.swift */,
 				85773AD71F175A2D001B8083 /* ProgressViewController.swift */,
+				8570CCBD2289C09B00F21FCB /* ImportViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				8505EC14204EF1D0001BE4A8 /* Repository.swift */,
 				8505EC16204EF3FB001BE4A8 /* BlockMenuItem.swift */,
 				854DC46D22816A320070B655 /* OrderedSet.swift */,
+				8570CCC1228ABE0F00F21FCB /* ImportTask.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -448,7 +454,9 @@
 				85773AD61F175700001B8083 /* TransparentWindow.swift in Sources */,
 				8505EC17204EF3FB001BE4A8 /* BlockMenuItem.swift in Sources */,
 				8520B5871F17CF25009D6910 /* ConfigurationService.swift in Sources */,
+				8570CCBE2289C09B00F21FCB /* ImportViewController.swift in Sources */,
 				85773AC81F167500001B8083 /* Serivces.swift in Sources */,
+				8570CCC2228ABE0F00F21FCB /* ImportTask.swift in Sources */,
 				85773ACE1F167B06001B8083 /* FileWatch.swift in Sources */,
 				85773ADE1F17A832001B8083 /* ClosedRange+At.swift in Sources */,
 				852081B1214AA2F300D2521E /* NSWindow+Position.swift in Sources */,

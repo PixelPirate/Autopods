@@ -31,8 +31,8 @@ final class CocoapodsProcess: LoggingProcess {
                 in: completeOutput,
                 range: NSRange(location: 0, length: completeOutput.utf16.count)
             )
-            else {
-                return []
+        else {
+            return []
         }
 
         let nsRange = match.range(at: 1)

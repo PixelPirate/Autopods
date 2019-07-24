@@ -753,5 +753,76 @@ CA
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
+        <!--Import View Controller-->
+        <scene sceneID="ZAX-lC-Hom">
+            <objects>
+                <viewController storyboardIdentifier="import" id="pF8-M8-XuE" customClass="ImportViewController" customModule="Autopods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="KRU-W7-oL2">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <visualEffectView appearanceType="inheritedVibrantLight" blendingMode="behindWindow" material="underWindowBackground" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="urh-CL-PQ4">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                            </visualEffectView>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfj-zg-W5t">
+                                <rect key="frame" x="20" y="20" width="410" height="88"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Zi-N5-kET">
+                                        <rect key="frame" x="160" y="69" width="90" height="19"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Importing ..." id="Szg-aR-ti8">
+                                            <font key="font" metaFont="systemMedium" size="15"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Zzs-EV-1Dd">
+                                        <rect key="frame" x="189" y="29" width="32" height="32"/>
+                                    </progressIndicator>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ju6-Jr-VGI">
+                                        <rect key="frame" x="164" y="-7" width="82" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K0Y-0k-89p">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="cancel:" target="pF8-M8-XuE" id="8Ty-OX-dR6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nfj-zg-W5t" firstAttribute="leading" secondItem="KRU-W7-oL2" secondAttribute="leading" constant="20" symbolic="YES" id="3Vy-OP-IfW"/>
+                            <constraint firstAttribute="trailing" secondItem="urh-CL-PQ4" secondAttribute="trailing" id="9Z2-5e-0pH"/>
+                            <constraint firstItem="nfj-zg-W5t" firstAttribute="top" secondItem="KRU-W7-oL2" secondAttribute="top" constant="20" symbolic="YES" id="HsF-rx-ykO"/>
+                            <constraint firstAttribute="bottom" secondItem="urh-CL-PQ4" secondAttribute="bottom" id="ME8-Qs-c4g"/>
+                            <constraint firstAttribute="bottom" secondItem="nfj-zg-W5t" secondAttribute="bottom" constant="20" symbolic="YES" id="drI-jw-564"/>
+                            <constraint firstItem="urh-CL-PQ4" firstAttribute="top" secondItem="KRU-W7-oL2" secondAttribute="top" id="kJ7-o1-Bkp"/>
+                            <constraint firstAttribute="trailing" secondItem="nfj-zg-W5t" secondAttribute="trailing" constant="20" symbolic="YES" id="tsZ-bS-aQx"/>
+                            <constraint firstItem="urh-CL-PQ4" firstAttribute="leading" secondItem="KRU-W7-oL2" secondAttribute="leading" id="uqq-ER-aHa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressIndicator" destination="Zzs-EV-1Dd" id="Q6R-Hq-3sD"/>
+                        <outlet property="statusTextField" destination="6Zi-N5-kET" id="uIX-bh-qFp"/>
+                    </connections>
+                </viewController>
+                <customObject id="fdp-Ul-Xhx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="116"/>
+        </scene>
     </scenes>
 </document>

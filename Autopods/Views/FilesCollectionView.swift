@@ -1,6 +1,14 @@
 import Cocoa
 
+protocol FilesCollectionViewDelegate: class {
+    func filesCollectionView(_ collectionView: FilesCollectionView, performImportFrom url: URL)
+}
+
 final class FilesCollectionView: NSCollectionView {
+
+    static let dropableFilenames = ["Podfile"]
+
+    weak var filesDelegate: FilesCollectionViewDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -11,14 +19,25 @@ final class FilesCollectionView: NSCollectionView {
         registerForDraggedTypes([NSURLPboardType])
     }
 
-    fileprivate func checkExtension(_ drag: NSDraggingInfo) -> Bool {
+    fileprivate func isValidDraggingObject(_ drag: NSDraggingInfo) -> Bool {
         guard let board = drag.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue: "NSFilenamesPboardType")) as? NSArray,
             let path = board[0] as? String
             else { return false }
 
-        let suffix = URL(fileURLWithPath: path).lastPathComponent
-        for ext in ["Podfile"] {
-            if ext.lowercased() == suffix.lowercased() {
+        if FileManager.default.isDirectory(atPath: path) {
+            return true
+        }
+
+        return isPodfile(at: URL(fileURLWithPath: path))
+    }
+
+    private func isPodfile(at url: URL) -> Bool {
+        guard !FileManager.default.isDirectory(atPath: url.path) else {
+            return false
+        }
+
+        for filename in FilesCollectionView.dropableFilenames {
+            if filename.caseInsensitiveCompare(url.lastPathComponent) == .orderedSame {
                 return true
             }
         }
@@ -26,7 +45,7 @@ final class FilesCollectionView: NSCollectionView {
     }
 
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
-        if checkExtension(sender) == true {
+        if isValidDraggingObject(sender) == true {
             self.layer?.backgroundColor = NSColor.green.cgColor
             return .copy
         } else {
@@ -35,7 +54,7 @@ final class FilesCollectionView: NSCollectionView {
     }
 
     override func draggingUpdated(_ sender: NSDraggingInfo) -> NSDragOperation {
-        if checkExtension(sender) == true {
+        if isValidDraggingObject(sender) == true {
             self.layer?.backgroundColor = NSColor.green.cgColor
             return .copy
         } else {
@@ -52,19 +71,33 @@ final class FilesCollectionView: NSCollectionView {
     }
 
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
-        guard let pasteboard = sender.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue: "NSFilenamesPboardType")) as? NSArray,
+        guard
+            let pasteboard = sender.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue: "NSFilenamesPboardType")) as? NSArray,
             let path = pasteboard[0] as? String
-            else { return false }
+        else {
+            return false
+        }
 
-        let url = URL(fileURLWithPath: path)
+        if FileManager.default.isDirectory(atPath: path) {
+            filesDelegate?.filesCollectionView(self, performImportFrom: URL(fileURLWithPath: path))
+        } else {
+            let url = URL(fileURLWithPath: path)
 
-        let podfile = Podfile(url: url)
-        Services.podfiles.insert(podfile)
+            let podfile = Podfile(url: url)
+            Services.podfiles.insert(podfile)
+        }
 
         return true
     }
+}
 
-//    override func deleteBackward(_ sender: Any?) {
-//        print(selectionIndexes)
-//    }
+fileprivate extension FileManager {
+
+    func isDirectory(atPath path: String) -> Bool {
+        var isDirectory: ObjCBool = false
+        if FileManager.default.fileExists(atPath: path, isDirectory: &isDirectory), isDirectory.boolValue {
+            return true
+        }
+        return false
+    }
 }
