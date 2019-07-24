@@ -78,7 +78,7 @@ final class CocoapodsProcess: LoggingProcess {
 
         let launchURL = URL(fileURLWithPath: launchPath)
 
-        guard launchURL.lastPathComponent == "pod" else {
+        guard launchURL.lastPathComponent == "pod" || launchURL.lastPathComponent == "bundle" else {
             return false
         }
 

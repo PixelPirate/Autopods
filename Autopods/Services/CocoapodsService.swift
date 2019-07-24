@@ -23,9 +23,12 @@ final class CocoapodsService {
 
         let dir = podfile.url.deletingLastPathComponent()
 
+        let gemfile = try? String(contentsOfFile: dir.appendingPathComponent("Gemfile").path)
+        let useBundler = gemfile?.contains("gem \"cocoapods\"") ?? false
+
         let process = CocoapodsProcess()
-        process.launchPath = "/usr/local/bin/pod"
-        process.arguments = [argument]
+        process.launchPath = useBundler ? "/usr/local/bin/bundle" : "/usr/local/bin/pod"
+        process.arguments = useBundler ? ["exec", "pod", argument] : [argument]
         process.currentDirectoryPath = dir.path
         var environment = ProcessInfo.processInfo.environment
         environment["LANG"] = "en_US.UTF-8"
